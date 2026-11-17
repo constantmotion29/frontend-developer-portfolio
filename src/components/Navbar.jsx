@@ -24,9 +24,9 @@ function Navbar({ theme, onThemeToggle }) {
   }
 
   const linkStyles =
-    "transition-colors hover:text-text-primary focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus";
-
-  return (
+    "underline decoration-current underline-offset-4 transition-colors hover:text-text-primary focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus";
+  
+    return (
     <header className="border-b border-border">
       <nav aria-label="Main navigation" className="mx-auto max-w-6xl px-6 py-6">
         <div className="flex items-center justify-between">
@@ -61,7 +61,7 @@ function Navbar({ theme, onThemeToggle }) {
               onClick={onThemeToggle}
               aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} theme`}
               aria-pressed={theme === "light"}
-              className="flex size-10 cursor-pointer items-center justify-center rounded-md border border-border text-lg text-text-primary transition-colors hover:bg-surface focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
+              className="flex size-10 cursor-pointer items-center justify-center rounded-md border border-control-border text-lg text-text-primary transition-colors hover:bg-surface focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
             >
               <span aria-hidden="true">{theme === "dark" ? "☀" : "☾"}</span>
             </button>
@@ -77,7 +77,7 @@ function Navbar({ theme, onThemeToggle }) {
             <button
               ref={menuButtonRef}
               type="button"
-              className="cursor-pointer rounded-md border border-border px-3 py-2 text-sm font-medium text-text-primary transition-colors hover:bg-surface focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus md:hidden"
+              className="cursor-pointer rounded-md border border-control-border px-3 py-2 text-sm font-medium text-text-primary transition-colors hover:bg-surface focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus md:hidden"
               aria-expanded={menuOpen}
               aria-controls="mobile-navigation"
               aria-label={

@@ -9,8 +9,12 @@
   --color-border: var(--border);
   --color-accent: var(--accent);
   --color-focus: var(--focus);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent-button: var(--accent-button);
+  --color-control-border: var(--control-border);
 }
 
+/* Dark theme */
 :root {
   color-scheme: dark;
   --page-bg: #171c26;
@@ -20,8 +24,12 @@
   --border: #ffffff1a;
   --accent: #60a5fa;
   --focus: #60a5fa;
+  --accent-foreground: #ffffff;
+  --accent-button: #2563eb;
+  --control-border: #64748b;
 }
 
+/* Light theme */
 :root[data-theme="light"] {
   color-scheme: light;
   --page-bg: #f5f7fb;
@@ -31,6 +39,9 @@
   --border: #1720331a;
   --accent: #2563eb;
   --focus: #1d4ed8;
+  --accent-foreground: #ffffff;
+  --accent-button: #2563eb;
+  --control-border: #526078;
 }
 
 html {

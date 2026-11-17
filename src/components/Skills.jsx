@@ -76,21 +76,21 @@ function Skills() {
     <section
       id="skills"
       aria-labelledby="skills-heading"
-      className="border-t border-white/10 px-6 py-24"
+      className="border-t border-border px-6 py-24"
     >
       <div className="mx-auto max-w-6xl">
-        <p className="mb-3 text-sm font-medium uppercase tracking-[0.25em] text-blue-400">
+        <p className="mb-3 text-sm font-medium uppercase tracking-[0.25em] text-accent">
           Technical Skills
         </p>
 
         <h2
           id="skills-heading"
-          className="text-3xl font-bold tracking-tight sm:text-4xl"
+          className="text-3xl font-bold tracking-tight text-text-primary sm:text-4xl"
         >
           Tools and technologies
         </h2>
 
-        <p className="mt-4 max-w-2xl leading-relaxed text-slate-400">
+        <p className="mt-4 max-w-2xl leading-relaxed text-text-secondary">
           Combining established front-end development experience with
           modern application technologies, component-driven workflows,
           and a strong foundation in web accessibility.
@@ -100,19 +100,19 @@ function Skills() {
           {skillGroups.map((group) => (
             <article
               key={group.title}
-              className="rounded-xl border border-white/10 bg-[#1d2431] p-5 sm:p-6"
+              className="rounded-xl border border-border bg-surface p-5 sm:p-6"
             >
-              <h3 className="font-semibold text-white">
+              <h3 className="font-semibold text-text-primary">
                 {group.title}
               </h3>
 
-              <p className="mt-2 text-sm leading-relaxed text-slate-400">
+              <p className="mt-2 text-sm leading-relaxed text-text-secondary">
                 {group.description}
               </p>
 
               <ul
                 aria-label={`${group.title} skills`}
-                className="mt-4 space-y-2 text-sm text-slate-400"
+                className="mt-4 space-y-2 text-sm text-text-secondary"
               >
                 {group.skills.map((skill) => (
                   <li key={skill}>{skill}</li>

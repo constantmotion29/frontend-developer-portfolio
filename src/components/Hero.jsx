@@ -27,22 +27,21 @@ function Hero() {
       </h1>
 
       <p className="mt-8 max-w-2xl text-lg leading-relaxed text-text-secondary">
-        I bring eight years of web development experience to building
-        responsive interfaces, reusable components, and accessible front-end
-        experiences.
+        I bring eight years of web development experience to building responsive
+        interfaces, reusable components, and accessible front-end experiences.
       </p>
 
       <div className="mt-10 flex flex-wrap gap-4">
         <a
           href="#work"
-          className="cursor-pointer rounded-md bg-accent px-6 py-3 font-medium text-white transition-colors hover:brightness-90 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
+          className="cursor-pointer rounded-md bg-accent-button px-6 py-3 font-medium text-accent-foreground transition-colors hover:brightness-90 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
         >
           View my work
         </a>
 
         <a
           href="#contact"
-          className="cursor-pointer rounded-md border border-border px-6 py-3 font-medium text-text-primary transition-colors hover:bg-surface focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
+          className="cursor-pointer rounded-md border border-control-border px-6 py-3 font-medium text-text-primary transition-colors hover:bg-surface focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
         >
           Get in touch
         </a>

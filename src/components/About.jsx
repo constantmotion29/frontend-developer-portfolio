@@ -18,22 +18,22 @@ function About() {
     <section
       id="about"
       aria-labelledby="about-heading"
-      className="border-t border-white/10 px-6 py-24"
+      className="border-t border-border px-6 py-24"
     >
       <div className="mx-auto grid max-w-6xl gap-12 md:grid-cols-[1.2fr_0.8fr]">
         <div>
-          <p className="mb-3 text-sm font-medium uppercase tracking-[0.25em] text-blue-400">
+          <p className="mb-3 text-sm font-medium uppercase tracking-[0.25em] text-accent">
             About Me
           </p>
 
           <h2
             id="about-heading"
-            className="max-w-xl text-3xl font-bold leading-tight tracking-tight sm:text-4xl"
+            className="max-w-xl text-3xl font-bold leading-tight tracking-tight text-text-primary sm:text-4xl"
           >
             Turning design specifications into polished interfaces.
           </h2>
 
-          <div className="mt-8 max-w-2xl space-y-5 leading-relaxed text-slate-400">
+          <div className="mt-8 max-w-2xl space-y-5 leading-relaxed text-text-secondary">
             <p>
               I'm a front-end web developer with eight years of professional
               experience across higher education and e-commerce.
@@ -57,10 +57,12 @@ function About() {
           {experienceMetrics.map((metric) => (
             <div
               key={metric.value}
-              className="border-l-2 border-blue-400 pl-5"
+              className="border-l-2 border-accent pl-5"
             >
-              <dt className="text-3xl font-bold">{metric.value}</dt>
-              <dd className="mt-1 text-sm leading-relaxed text-slate-400">
+              <dt className="text-3xl font-bold text-text-primary">
+                {metric.value}
+              </dt>
+              <dd className="mt-1 text-sm leading-relaxed text-text-secondary">
                 {metric.description}
               </dd>
             </div>
