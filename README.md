@@ -1,16 +1,137 @@
-# React + Vite
+# Front-End Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio showcasing my front-end development experience, UI engineering skills, and approach to building responsive, accessible web experiences.
 
-Currently, two official plugins are available:
+Built with React, Vite, and Tailwind CSS, the portfolio features a component-based architecture and uses Storybook for component development and documentation.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
 
-## React Compiler
+- **React** – Component-based UI development
+- **JavaScript (ES6+)** – Application logic and interactive functionality
+- **Vite** – Development server and production build tooling
+- **Tailwind CSS** – Responsive styling and utility-first CSS
+- **Storybook** – Component development and documentation
+- **ESLint** – Code quality and linting
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- Responsive layouts for desktop and mobile devices
+- Reusable React components
+- Accessible navigation and semantic HTML
+- Keyboard-accessible interactions and visible focus indicators
+- Reduced-motion support
+- Dedicated component stories in Storybook
+- Featured project showcase with live demo and GitHub links
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Featured Project
+
+### The Video Crypt
+
+A vintage-inspired horror movie rental application built with React and Express.
+
+Features include:
+- Interactive movie catalog
+- API integration
+- Search and filtering
+- Reservation functionality
+- Persistent browser storage
+
+**[Live Demo](https://video-crypt.vercel.app)** · **[GitHub Repository](https://github.com/constantmotion29/video-crypt)**
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js
+- npm
+
+### Installation
+
+Clone the repository and navigate to the project directory:
+
+```bash
+git clone https://github.com/constantmotion29/frontend-developer-portfolio
+cd frontend-developer-portfolio
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Vite will provide a local development URL in the terminal.
+
+## Available Scripts
+
+| Command | Description |
+|---|---|
+| `npm run dev` | Starts the Vite development server |
+| `npm run build` | Builds the application for production |
+| `npm run preview` | Previews the production build locally |
+| `npm run lint` | Runs ESLint |
+| `npm run storybook` | Starts the Storybook development server |
+| `npm run build-storybook` | Builds Storybook for production |
+
+## Storybook
+
+Storybook is used to develop, inspect, and document individual React components independently of the main application.
+
+To start Storybook:
+
+```bash
+npm run storybook
+```
+
+The development server runs at `http://localhost:6006`.
+
+## Accessibility
+
+Accessibility is an important consideration throughout the project.
+
+Implementation includes:
+- Semantic HTML and accessible section headings
+- Keyboard navigation and visible focus indicators
+- Descriptive accessible names for interactive elements
+- Reduced-motion preferences
+- Responsive layouts and zoom support
+- Storybook accessibility checks
+
+The application has also been evaluated using keyboard testing, screen reader testing, and Lighthouse accessibility audits.
+
+## Project Structure
+
+```text
+frontend-developer-portfolio/
+├── .storybook/
+│   ├── main.js
+│   └── preview.jsx
+├── public/
+│   └── images/
+├── src/
+│   ├── components/
+│   │   ├── About.jsx
+│   │   ├── Contact.jsx
+│   │   ├── FeaturedWork.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Hero.jsx
+│   │   ├── Navbar.jsx
+│   │   └── Skills.jsx
+│   ├── App.jsx
+│   └── index.css
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+└── vite.config.js
+```
+
+## License
+
+This project was created as a personal portfolio and demonstration of front-end development skills.

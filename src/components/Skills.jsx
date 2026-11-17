@@ -1,4 +1,77 @@
 function Skills() {
+  const skillGroups = [
+    {
+      title: "Front-end Foundations",
+      description: "Building responsive, maintainable web interfaces.",
+      skills: [
+        "HTML5",
+        "CSS3 / Sass",
+        "JavaScript (ES6+)",
+        "jQuery",
+        "Responsive Development",
+      ],
+    },
+    {
+      title: "UI Engineering & Accessibility",
+      description:
+        "Translating designs into reusable, accessible interfaces.",
+      skills: [
+        "Reusable UI Components",
+        "Design-to-Code Implementation",
+        "Figma Dev Mode",
+        "WCAG Guidelines",
+        "Cross-Browser Testing",
+        "Storybook",
+        "Component-Driven Development",
+      ],
+    },
+    {
+      title: "Modern Application Development",
+      description:
+        "Building interactive applications and integrating services.",
+      skills: [
+        "React",
+        "Tailwind CSS",
+        "Vite",
+        "Node.js",
+        "Express",
+        "REST APIs",
+        "PHP",
+        "MySQL",
+        "Microsoft SQL Server",
+      ],
+    },
+    {
+      title: "CMS & Templating",
+      description:
+        "Developing structured content systems and reusable templates.",
+      skills: [
+        "Cascade CMS",
+        "Drupal",
+        "WordPress",
+        "Velocity",
+        "XML / XSLT",
+        "Structured Content",
+      ],
+    },
+    {
+      title: "Development Tools & Automation",
+      description:
+        "Supporting efficient development and automation workflows.",
+      skills: [
+        "Git / GitHub",
+        "VS Code",
+        "Chrome DevTools",
+        "CI/CD Pipelines",
+        "Docker",
+        "PowerShell",
+        "Bash",
+        "JavaScript Automation",
+        "Enfocus Switch",
+      ],
+    },
+  ];
+
   return (
     <section
       id="skills"
@@ -18,89 +91,35 @@ function Skills() {
         </h2>
 
         <p className="mt-4 max-w-2xl leading-relaxed text-slate-400">
-          A foundation in web development, with a focus on front-end
-          engineering, accessible interfaces, and modern application
-          development.
+          Combining established front-end development experience with
+          modern application technologies, component-driven workflows,
+          and a strong foundation in web accessibility.
         </p>
 
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          <div className="rounded-xl border border-white/10 bg-[#1d2431] p-6">
-            <h3 className="font-semibold text-white">
-              Front-end Development
-            </h3>
-            <ul className="mt-5 space-y-3 text-sm text-slate-400">
-              <li>HTML5</li>
-              <li>CSS3 / Sass</li>
-              <li>JavaScript (ES6+)</li>
-              <li>React</li>
-              <li>Tailwind CSS</li>
-              <li>Responsive Design</li>
-            </ul>
-          </div>
+          {skillGroups.map((group) => (
+            <article
+              key={group.title}
+              className="rounded-xl border border-white/10 bg-[#1d2431] p-5 sm:p-6"
+            >
+              <h3 className="font-semibold text-white">
+                {group.title}
+              </h3>
 
-          <div className="rounded-xl border border-white/10 bg-[#1d2431] p-6">
-            <h3 className="font-semibold text-white">UI Engineering</h3>
-            <ul className="mt-5 space-y-3 text-sm text-slate-400">
-              <li>Reusable UI Components</li>
-              <li>Design-to-Code Implementation</li>
-              <li>Figma Dev Mode</li>
-              <li>Web Accessibility (WCAG)</li>
-              <li>Cross-Browser Testing</li>
-              <li>Component-Driven Development</li>
-            </ul>
-          </div>
+              <p className="mt-2 text-sm leading-relaxed text-slate-400">
+                {group.description}
+              </p>
 
-          <div className="rounded-xl border border-white/10 bg-[#1d2431] p-6">
-            <h3 className="font-semibold text-white">Backend & APIs</h3>
-            <ul className="mt-5 space-y-3 text-sm text-slate-400">
-              <li>Node.js</li>
-              <li>Express</li>
-              <li>PHP</li>
-              <li>REST APIs</li>
-              <li>MySQL</li>
-              <li>Server-Side Development</li>
-            </ul>
-          </div>
-
-          <div className="rounded-xl border border-white/10 bg-[#1d2431] p-6">
-            <h3 className="font-semibold text-white">CMS & Templating</h3>
-            <ul className="mt-5 space-y-3 text-sm text-slate-400">
-              <li>Cascade CMS</li>
-              <li>Drupal</li>
-              <li>WordPress</li>
-              <li>Velocity</li>
-              <li>XML / XSLT</li>
-              <li>Structured Content</li>
-            </ul>
-          </div>
-
-          <div className="rounded-xl border border-white/10 bg-[#1d2431] p-6">
-            <h3 className="font-semibold text-white">
-              Development Tools
-            </h3>
-            <ul className="mt-5 space-y-3 text-sm text-slate-400">
-              <li>Git / GitHub</li>
-              <li>Vite</li>
-              <li>VS Code</li>
-              <li>Chrome DevTools</li>
-              <li>CI/CD Pipelines</li>
-              <li>Docker</li>
-            </ul>
-          </div>
-
-          <div className="rounded-xl border border-white/10 bg-[#1d2431] p-6">
-            <h3 className="font-semibold text-white">
-              Additional Technologies
-            </h3>
-            <ul className="mt-5 space-y-3 text-sm text-slate-400">
-              <li>PowerShell</li>
-              <li>Bash</li>
-              <li>JavaScript Automation</li>
-              <li>Microsoft SQL Server</li>
-              <li>jQuery</li>
-              <li>Enfocus Switch</li>
-            </ul>
-          </div>
+              <ul
+                aria-label={`${group.title} skills`}
+                className="mt-4 space-y-2 text-sm text-slate-400"
+              >
+                {group.skills.map((skill) => (
+                  <li key={skill}>{skill}</li>
+                ))}
+              </ul>
+            </article>
+          ))}
         </div>
       </div>
     </section>
