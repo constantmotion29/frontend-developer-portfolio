@@ -19,7 +19,7 @@ function getInitialTheme() {
     // Fall back to the system preference if storage is unavailable.
   }
 
-  return window.matchMedia("(prefers-color-scheme: light)").matches
+  return window.matchMedia?.("(prefers-color-scheme: light)")?.matches
     ? "light"
     : "dark";
 }
@@ -42,7 +42,7 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-[#171c26] text-[#f4f5f7]">
+    <div className="min-h-screen bg-page text-text-primary">
       {/* Navigation */}
       <Navbar theme={theme} onThemeToggle={toggleTheme} />
 
