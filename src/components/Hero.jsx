@@ -47,6 +47,14 @@ function Hero() {
         >
           Get in touch
         </a>
+
+        <a
+          href="/Anna-Wesolowski-Resume.pdf"
+          download
+          className="cursor-pointer rounded-md border border-control-border px-6 py-3 font-medium text-text-primary transition-colors hover:bg-surface focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
+        >
+          Download Résumé
+        </a>
       </div>
 
       <ul
