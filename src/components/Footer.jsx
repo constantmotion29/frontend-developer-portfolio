@@ -8,7 +8,7 @@ function Footer() {
 
         <div className="flex flex-wrap items-center justify-center gap-4">
           <a
-            href="/Anna-Wesolowski-Front-End-Web-Developer-Resume.pdf"
+            href="/Anna-Wesolowski-Resume.pdf"
             download
             aria-label="Download résumé as a PDF"
             className="underline underline-offset-4 transition-colors hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
