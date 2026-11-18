@@ -19,8 +19,8 @@ function Contact() {
 
         <p className="mt-6 max-w-xl leading-relaxed text-text-secondary">
           I'm interested in front-end development and UI engineering
-          opportunities where I can build responsive, accessible interfaces and
-          contribute to thoughtful, scalable web experiences. Let's connect.
+          opportunities focused on building responsive, accessible interfaces
+          and creating thoughtful user experiences. I'd love to connect.
         </p>
 
         <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-4">

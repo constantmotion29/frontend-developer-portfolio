@@ -28,9 +28,9 @@ function FeaturedWork() {
           </h2>
 
           <p className="mt-4 max-w-2xl leading-relaxed text-text-secondary">
-            Projects that showcase my approach to building responsive
-            interfaces, implementing interactive features, and creating
-            accessible web experiences.
+            Selected projects demonstrating my experience building responsive
+            interfaces, reusable components, and interactive web applications
+            with a focus on accessibility and maintainable code.
           </p>
         </div>
 
@@ -58,10 +58,10 @@ function FeaturedWork() {
               </h3>
 
               <p className="mt-4 leading-relaxed text-text-secondary">
-                A vintage-inspired horror movie rental app built with React and
-                Express. Features an interactive movie catalog, API integration,
-                search and filtering, and a reservation system with persistent
-                browser storage.
+                A vintage-inspired horror movie rental application built with
+                React and Express. Features a searchable, filterable movie
+                catalog, movie details powered by API integration, and an
+                interactive reservation system with persistent browser storage.
               </p>
 
               <div className="mt-6 flex flex-wrap gap-2">
@@ -80,7 +80,7 @@ function FeaturedWork() {
                   href="https://video-crypt.vercel.app"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-accent underline decoration-transparent underline-offset-4 transition-colors hover:decoration-current focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
+                  className="text-accent underline decoration-current underline-offset-4 transition-colors hover:decoration-current focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
                 >
                   Live Demo <span aria-hidden="true">↗</span>
                   <span className="sr-only"> (opens in a new tab)</span>
@@ -90,7 +90,7 @@ function FeaturedWork() {
                   href="https://github.com/constantmotion29/video-crypt"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-text-primary underline decoration-transparent underline-offset-4 transition-colors hover:text-accent hover:decoration-current focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
+                  className="text-text-primary underline decoration-current underline-offset-4 transition-colors hover:text-accent hover:decoration-current focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
                 >
                   GitHub Repository <span aria-hidden="true">↗</span>
                   <span className="sr-only"> (opens in a new tab)</span>

@@ -36,29 +36,27 @@ function About() {
           <div className="mt-8 max-w-2xl space-y-5 leading-relaxed text-text-secondary">
             <p>
               I'm a front-end web developer with eight years of professional
-              experience across higher education and e-commerce.
+              experience building and maintaining web applications across higher
+              education and e-commerce.
             </p>
 
             <p>
-              I translate design specifications into responsive, accessible
-              interfaces and reusable components, with a focus on maintainable
-              front-end code.
+              I specialize in translating design specifications into responsive,
+              accessible interfaces and reusable components, with an emphasis on
+              maintainable code and consistent user experiences.
             </p>
 
             <p>
-              Outside my professional work, I build React applications and
-              explore modern development workflows, including component-driven
-              development and API integration.
+              I'm expanding my front-end experience through independent React
+              projects, exploring component-driven development, API integration,
+              and modern JavaScript workflows.
             </p>
           </div>
         </div>
 
         <dl className="flex flex-col justify-center gap-8">
           {experienceMetrics.map((metric) => (
-            <div
-              key={metric.value}
-              className="border-l-2 border-accent pl-5"
-            >
+            <div key={metric.value} className="border-l-2 border-accent pl-5">
               <dt className="text-3xl font-bold text-text-primary">
                 {metric.value}
               </dt>

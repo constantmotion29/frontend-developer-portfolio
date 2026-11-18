@@ -1,12 +1,13 @@
 function Skills() {
   const skillGroups = [
     {
-      title: "Front-end Foundations",
+      title: "Front-end Development",
       description: "Building responsive, maintainable web interfaces.",
       skills: [
         "HTML5",
         "CSS3 / Sass",
         "JavaScript (ES6+)",
+        "React",
         "jQuery",
         "Responsive Development",
       ],
@@ -21,8 +22,8 @@ function Skills() {
         "Figma Dev Mode",
         "WCAG Guidelines",
         "Cross-Browser Testing",
-        "Storybook",
         "Component-Driven Development",
+        "Storybook",
       ],
     },
     {
@@ -30,7 +31,6 @@ function Skills() {
       description:
         "Building interactive applications and integrating services.",
       skills: [
-        "React",
         "Tailwind CSS",
         "Vite",
         "Node.js",
@@ -39,19 +39,6 @@ function Skills() {
         "PHP",
         "MySQL",
         "Microsoft SQL Server",
-      ],
-    },
-    {
-      title: "CMS & Templating",
-      description:
-        "Developing structured content systems and reusable templates.",
-      skills: [
-        "Cascade CMS",
-        "Drupal",
-        "WordPress",
-        "Velocity",
-        "XML / XSLT",
-        "Structured Content",
       ],
     },
     {
@@ -68,6 +55,19 @@ function Skills() {
         "Bash",
         "JavaScript Automation",
         "Enfocus Switch",
+      ],
+    },
+    {
+      title: "CMS & Templating",
+      description:
+        "Developing structured content systems and reusable templates.",
+      skills: [
+        "Cascade CMS",
+        "Drupal",
+        "WordPress",
+        "Velocity",
+        "XML / XSLT",
+        "Structured Content",
       ],
     },
   ];
@@ -91,9 +91,9 @@ function Skills() {
         </h2>
 
         <p className="mt-4 max-w-2xl leading-relaxed text-text-secondary">
-          Combining established front-end development experience with
-          modern application technologies, component-driven workflows,
-          and a strong foundation in web accessibility.
+          A combination of established front-end development experience,
+          modern JavaScript technologies, UI engineering practices, and a
+          focus on accessible, maintainable interfaces.
         </p>
 
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

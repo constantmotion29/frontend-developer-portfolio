@@ -28,7 +28,9 @@ function Hero() {
 
       <p className="mt-8 max-w-2xl text-lg leading-relaxed text-text-secondary">
         I bring eight years of web development experience to building responsive
-        interfaces, reusable components, and accessible front-end experiences.
+        interfaces, reusable UI components, and engaging web experiences. I
+        focus on translating designs into accessible, maintainable front-end
+        solutions.
       </p>
 
       <div className="mt-10 flex flex-wrap gap-4">
