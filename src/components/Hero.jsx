@@ -49,7 +49,7 @@ function Hero() {
         </a>
 
         <a
-          href="/Anna-Wesolowski-Resume.pdf"
+          href="/Anna-Wesolowski-Front-End-Web-Developer-Resume.pdf"
           download
           aria-label="Download résumé as a PDF"
           className="cursor-pointer rounded-md border border-control-border px-6 py-3 font-medium text-text-primary transition-colors hover:bg-surface focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
