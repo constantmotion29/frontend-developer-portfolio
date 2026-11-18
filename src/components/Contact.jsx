@@ -26,7 +26,7 @@ function Contact() {
         <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
           <a
             href="mailto:anw1667@outlook.com"
-            className="cursor-pointer rounded-md bg-accent-button px-6 py-3 font-medium text-accent-foreground transition-colors hover:brightness-90 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
+            className="cursor-pointer rounded-md bg-accent-button px-6 py-3 text-center font-medium text-accent-foreground transition-colors hover:brightness-90 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
           >
             Email Me
           </a>
