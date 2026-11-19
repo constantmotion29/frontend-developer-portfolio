@@ -14,12 +14,13 @@ function Contact() {
           id="contact-heading"
           className="max-w-2xl text-3xl font-bold leading-tight tracking-tight text-text-primary sm:text-4xl"
         >
-          Let's build something meaningful.
+          Interested in working together?
         </h2>
 
         <p className="mt-6 max-w-2xl leading-relaxed text-text-secondary">
-          Have a project or opportunity in mind? I'd love to hear from you.
-          Feel free to reach out.
+          I'm always open to hearing about interesting projects and front-end
+          development opportunities. If you'd like to connect, feel free to
+          reach out.
         </p>
 
         <div className="mt-8 flex flex-wrap items-center gap-4">
