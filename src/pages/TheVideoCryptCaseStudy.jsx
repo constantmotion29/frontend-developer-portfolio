@@ -64,15 +64,15 @@ function TheVideoCryptCaseStudy() {
             </h1>
 
             <p className="mt-6 max-w-3xl text-xl leading-relaxed text-text-secondary sm:text-2xl">
-              Bringing the neighborhood video store back to life.
+              A little piece of the video store experience, brought to the web.
             </p>
 
             <p className="mt-6 max-w-2xl leading-relaxed text-text-secondary">
-              A vintage-inspired horror movie rental application built as a
-              hands-on introduction to React. What started as a way to learn a
-              new framework became a fully deployed application with movie
-              discovery, API integration, persistent reservations, and
-              accessibility built into the experience.
+              I built The Video Crypt as a way to learn React while working on
+              something I was genuinely interested in. Inspired by the video
+              rental stores I used to visit almost every Friday, it's a
+              fictional horror movie shop where visitors can browse movies,
+              check availability, and make reservations.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-5 text-sm font-medium">
@@ -123,12 +123,12 @@ function TheVideoCryptCaseStudy() {
             id="screenshots-heading"
             className="text-3xl font-bold tracking-tight text-text-primary"
           >
-            More than a movie catalog.
+            A look inside The Video Crypt
           </h2>
 
           <p className="mt-4 max-w-2xl leading-relaxed text-text-secondary">
-            Explore the interfaces and interactions that bring The Video Crypt
-            to life.
+            Here are a few parts of the application, from browsing the movie
+            collection to making reservations.
           </p>
 
           <div className="mt-10 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -149,8 +149,8 @@ function TheVideoCryptCaseStudy() {
                   The Movie Catalog
                 </h3>
                 <p className="mt-1 text-sm text-text-secondary">
-                  Browse a curated horror movie collection with search,
-                  filtering, and availability indicators.
+                  Browse the collection, search for movies, and filter titles
+                  by availability.
                 </p>
               </figcaption>
             </figure>
@@ -172,8 +172,7 @@ function TheVideoCryptCaseStudy() {
                   Movie Reservations
                 </h3>
                 <p className="mt-1 text-sm text-text-secondary">
-                  An interactive reservation experience with persistent browser
-                  storage.
+                  Reserve movies and keep track of their availability.
                 </p>
               </figcaption>
             </figure>
@@ -192,10 +191,10 @@ function TheVideoCryptCaseStudy() {
 
               <figcaption className="mt-3">
                 <h3 className="font-semibold text-text-primary">
-                  Responsive Experience
+                  Mobile Layout
                 </h3>
                 <p className="mt-1 text-sm text-text-secondary">
-                  A layout adapted for smaller screens and mobile browsing.
+                  The catalog and its features adapt to smaller screens.
                 </p>
               </figcaption>
             </figure>
@@ -240,206 +239,202 @@ function TheVideoCryptCaseStudy() {
           <CaseStudySection
             id="overview"
             eyebrow="01 / The idea"
-            title="A project worth getting lost in"
+            title="Why I built it"
           >
             <p>
-              I wanted to learn React by building something I genuinely enjoyed.
-              Rather than following a tutorial to recreate a generic example, I
-              chose a concept that gave me room to experiment and build an
-              application with real functionality.
+              I wanted to learn React, but I didn't want to spend my time
+              following tutorials and building the same examples everyone else
+              builds. I wanted a project I could make my own and actually enjoy
+              working on.
             </p>
 
             <p>
-              The result was The Video Crypt: a fictional neighborhood video
-              rental store dedicated to horror movies. The project gave me a
-              practical way to explore React while building something that felt
-              personal and fun.
+              I settled on a horror movie rental store. I used to visit video
+              stores almost every Friday, so the idea brought back some good
+              memories. I thought it would be fun to recreate that experience
+              as a website.
             </p>
           </CaseStudySection>
 
           <CaseStudySection
             id="design"
             eyebrow="02 / Visual direction"
-            title="A little nostalgia. A lot of horror."
+            title="Creating the look of the store"
           >
             <p>
-              The visual identity draws on the atmosphere of an independent
-              video rental store in the late 1980s and early 1990s. I wanted the
-              interface to feel like browsing a collection of horror tapes
-              rather than using a conventional movie database.
+              I wanted the site to feel like an old independent video rental
+              store, somewhere you might have browsed horror tapes in the late
+              1980s or early 1990s. I didn't want it to look like a typical
+              movie database.
             </p>
 
             <p>
-              I developed the visual direction alongside the application instead
-              of starting with a finished design. The vintage-inspired aesthetic
-              evolved as the functionality came together, with typography,
-              color, and layout helping establish the store's personality.
+              I worked out the visual style as I built the application.
+              Typography, colors, and layout all helped shape the look. The
+              design wasn't something I finished before writing code; it
+              developed alongside the project.
             </p>
           </CaseStudySection>
 
           <CaseStudySection
             id="architecture"
             eyebrow="03 / Development"
-            title="Growing beyond one component"
+            title="Getting the application organized"
           >
             <p>
-              This was my first substantial React application, and I had very
-              little experience with the framework when I started. My initial
-              implementation put most of the application in App.jsx. As the
-              project grew, that approach became difficult to manage.
+              When I started, I was still getting comfortable with React. My
+              first version had most of the application in App.jsx. That worked
+              initially, but as I added more features, the file became harder
+              to work with.
             </p>
 
             <p>
-              I began separating the interface into reusable components and
-              moving related application logic into custom hooks. This helped
-              give the project a clearer structure and made individual
-              responsibilities easier to understand and maintain.
+              I started breaking the interface into smaller components and
+              moving related logic into custom hooks. This made it easier to
+              work on individual parts of the application without everything
+              being tied together.
             </p>
 
             <p>
-              I developed custom hooks for movie data, movie details, and
-              reservations, separating data-related logic from the components
-              that display it.
+              I ended up creating custom hooks for movie data, movie details,
+              and reservations, keeping that logic separate from the
+              components displaying the information.
             </p>
           </CaseStudySection>
 
           <CaseStudySection
             id="integration"
             eyebrow="04 / API integration"
-            title="Connecting the interface to real data"
+            title="Working with an API"
           >
             <p>
-              Working with asynchronous API requests was another new part of the
-              learning process. I adapted an existing Express backend to serve
-              the curated movie catalog and retrieve additional movie details
-              through The Movie Database (TMDB) API.
+              I wanted the movie catalog to do more than display a collection
+              of hardcoded information. I worked with an Express backend to
+              serve the catalog and retrieve additional movie details from
+              The Movie Database (TMDB).
             </p>
 
             <p>
-              The application uses its own API endpoints to communicate with the
-              backend. The TMDB API key stays on the server rather than being
-              exposed in the browser, keeping sensitive configuration out of the
-              front-end application.
+              The front end makes requests to my own API endpoints, which
+              communicate with TMDB on the server. This also means the TMDB
+              API key stays on the server instead of being exposed in the
+              browser.
             </p>
 
             <p>
-              I also worked through the practical details of asynchronous
-              requests, including loading and error states, while connecting the
-              interface to the backend.
+              This was a good opportunity to get more familiar with
+              asynchronous requests and handling loading and error states in
+              the interface.
             </p>
           </CaseStudySection>
 
           <CaseStudySection
             id="reservations"
             eyebrow="05 / Application behavior"
-            title="Making reservations persist"
+            title="Making reservations work"
           >
             <p>
-              The reservation system lets visitors interact with the movie
-              catalog instead of simply browsing static content. Users can
-              reserve movies and see their availability reflected throughout the
-              application.
+              I wanted visitors to be able to do more than browse the movies.
+              The reservation feature lets them reserve titles and see changes
+              in availability throughout the catalog.
             </p>
 
             <p>
-              I used browser localStorage to persist reservations between
-              visits. Learning how to manage that data alongside React state was
-              an important part of understanding how an interactive application
-              maintains a consistent experience.
+              Reservations are saved in the browser using localStorage, so
+              they remain there when someone returns to the site. Getting
+              that data to work alongside React state was another part of the
+              project I had to learn along the way.
             </p>
           </CaseStudySection>
 
           <CaseStudySection
             id="accessibility"
             eyebrow="06 / Accessibility"
-            title="Accessibility from the beginning"
+            title="Making the site accessible"
           >
             <p>
-              Accessibility was a deliberate part of the project from the start.
-              I brought experience from my professional work into the
-              application, applying those principles in a React environment.
+              Accessibility is something I've worked with throughout my
+              professional career, so I wanted it to be part of this project
+              too.
             </p>
 
             <p>
-              The implementation includes semantic HTML, keyboard navigation,
-              visible focus indicators, accessible dialog behavior and focus
-              management, and reduced-motion support.
+              I used semantic HTML, added visible keyboard focus indicators,
+              and worked on keyboard navigation and dialog behavior, including
+              focus management. I also included support for reduced motion.
             </p>
 
             <p>
-              I also tested responsive layouts and browser zoom to check that
-              the experience remained usable across different viewport sizes and
-              viewing conditions.
+              I checked the layouts at different screen sizes and browser zoom
+              levels to make sure the application remained usable.
             </p>
           </CaseStudySection>
 
           <CaseStudySection
             id="testing"
-            eyebrow="07 / Quality assurance"
-            title="Learning to test the application"
+            eyebrow="07 / Testing"
+            title="Adding automated tests"
           >
             <p>
-              Automated testing was entirely new to me when I started this
-              project. I expanded my workflow to include component tests,
-              end-to-end testing, and Storybook interaction tests.
+              Testing was another area I wanted to explore as part of this
+              project. I started learning how to test individual components as
+              well as the application as a whole.
             </p>
 
             <p>
-              I used Vitest and React Testing Library for front-end tests,
-              Playwright for end-to-end coverage, and Storybook to develop and
-              exercise component interactions in isolation.
+              I used Vitest and React Testing Library for component tests,
+              Playwright for end-to-end tests, and Storybook to work with
+              components and test their interactions in isolation.
             </p>
 
             <p>
-              This gave me experience testing not just how the application
-              looks, but how its components and user interactions behave.
+              This gave me a better understanding of how to check that things
+              work as expected, rather than relying only on what I could see
+              in the browser.
             </p>
           </CaseStudySection>
 
           <CaseStudySection
             id="learning"
-            eyebrow="08 / Reflection"
-            title="From learning React to shipping an application"
+            eyebrow="08 / What I learned"
+            title="Putting everything together"
           >
             <p>
-              The biggest challenge was learning several things at once:
-              component organization, props, state, hooks, API integration, and
-              debugging. I relied on documentation, tutorials, experimentation,
-              and ChatGPT as a learning and debugging partner along the way.
+              There was a lot to learn while building this project. I was
+              getting familiar with React components, props, state, and hooks
+              while also working through API requests, application structure,
+              and debugging.
             </p>
 
             <p>
-              The most rewarding part was seeing all the pieces finally come
-              together. What began as an opportunity to learn React became a
-              working application connected to a backend and an external API,
-              with persistent user interactions, accessibility considerations,
-              and automated tests.
+              I used documentation, tutorials, experimentation, and ChatGPT
+              to help me understand problems and work through things I hadn't
+              encountered before.
             </p>
 
             <p>
-              More than anything, this project gave me practical experience
-              taking an idea from an early implementation through to a deployed
-              application.
+              Seeing the application come together was the most rewarding
+              part. What started as a way to learn React turned into a
+              working application with a backend, movie data from an external
+              API, reservations, and automated tests.
             </p>
           </CaseStudySection>
 
           <CaseStudySection
             id="next-steps"
             eyebrow="09 / What's next"
-            title="Room to keep growing"
+            title="There's more I'd like to add"
           >
             <p>
-              There are plenty of ways I would like to expand The Video Crypt.
-              Future improvements include a larger movie collection, more
-              browsing and discovery features, richer movie detail pages, and
-              pagination.
+              I have a few ideas for where to take the project next, including
+              a larger movie collection, better browsing and discovery
+              features, more detailed movie pages, and pagination.
             </p>
 
             <p>
-              For now, the project represents an important milestone in my
-              front-end development journey: building something functional,
-              learning unfamiliar tools, and turning the experience into a real
-              application.
+              For now, I'm happy to have taken the idea from an initial
+              experiment to a deployed application. I've learned a lot along
+              the way, and there's still plenty I'd like to explore.
             </p>
           </CaseStudySection>
         </div>
@@ -452,7 +447,9 @@ function TheVideoCryptCaseStudy() {
             Tools & technologies
           </p>
 
-          <h2 className="text-2xl font-bold text-text-primary">Built with</h2>
+          <h2 className="text-2xl font-bold text-text-primary">
+            Built with
+          </h2>
 
           <div className="mt-8 flex flex-wrap gap-3">
             {technologies.map((technology) => (
