@@ -1,8 +1,10 @@
 import { useEffect, useRef, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 function Navbar({ theme, onThemeToggle }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuButtonRef = useRef(null);
+  const location = useLocation();
 
   useEffect(() => {
     function handleKeyDown(event) {
@@ -19,39 +21,50 @@ function Navbar({ theme, onThemeToggle }) {
     };
   }, [menuOpen]);
 
+  // Handle section links when navigating between routes.
+  useEffect(() => {
+    if (location.hash) {
+      const targetId = decodeURIComponent(location.hash.slice(1));
+
+      document.getElementById(targetId)?.scrollIntoView();
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [location.pathname, location.hash]);
+
   function closeMenu() {
     setMenuOpen(false);
   }
 
   const linkStyles =
     "underline decoration-current underline-offset-4 transition-colors hover:text-text-primary focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus";
-  
-    return (
+
+  return (
     <header className="border-b border-border">
       <nav aria-label="Main navigation" className="mx-auto max-w-6xl px-6 py-6">
         <div className="flex items-center justify-between">
-          <a
-            href="#home"
+          <Link
+            to="/#home"
             className="text-lg font-bold tracking-tight text-text-primary transition-colors hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
             onClick={closeMenu}
           >
             Anna Wesolowski<span className="text-accent">.</span>
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden items-center gap-8 text-sm font-medium text-text-secondary md:flex">
-            <a href="#work" className={linkStyles}>
+            <Link to="/#work" className={linkStyles}>
               Work
-            </a>
-            <a href="#about" className={linkStyles}>
+            </Link>
+            <Link to="/#about" className={linkStyles}>
               About
-            </a>
-            <a href="#skills" className={linkStyles}>
+            </Link>
+            <Link to="/#skills" className={linkStyles}>
               Skills
-            </a>
-            <a href="#contact" className={linkStyles}>
+            </Link>
+            <Link to="/#contact" className={linkStyles}>
               Contact
-            </a>
+            </Link>
           </div>
 
           <div className="flex items-center gap-3">
@@ -66,12 +79,12 @@ function Navbar({ theme, onThemeToggle }) {
               <span aria-hidden="true">{theme === "dark" ? "☀" : "☾"}</span>
             </button>
 
-            <a
-              href="#contact"
+            <Link
+              to="/#contact"
               className="hidden rounded-md border border-accent/50 px-4 py-2 text-sm font-medium text-accent transition-colors hover:bg-accent/10 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus sm:inline-flex"
             >
               Let's talk
-            </a>
+            </Link>
 
             {/* Mobile Menu Button */}
             <button
@@ -97,21 +110,21 @@ function Navbar({ theme, onThemeToggle }) {
           hidden={!menuOpen}
           className="mt-6 flex flex-col gap-5 border-t border-border pt-6 text-sm font-medium text-text-secondary md:hidden"
         >
-          <a href="#work" className={linkStyles} onClick={closeMenu}>
+          <Link to="/#work" className={linkStyles} onClick={closeMenu}>
             Work
-          </a>
+          </Link>
 
-          <a href="#about" className={linkStyles} onClick={closeMenu}>
+          <Link to="/#about" className={linkStyles} onClick={closeMenu}>
             About
-          </a>
+          </Link>
 
-          <a href="#skills" className={linkStyles} onClick={closeMenu}>
+          <Link to="/#skills" className={linkStyles} onClick={closeMenu}>
             Skills
-          </a>
+          </Link>
 
-          <a href="#contact" className={linkStyles} onClick={closeMenu}>
+          <Link to="/#contact" className={linkStyles} onClick={closeMenu}>
             Contact
-          </a>
+          </Link>
         </nav>
       </nav>
     </header>

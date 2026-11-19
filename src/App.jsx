@@ -1,12 +1,10 @@
 import { useEffect, useState } from "react";
+import { Navigate, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import FeaturedWork from "./components/FeaturedWork";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import HomePage from "./pages/HomePage";
+import TheVideoCryptCaseStudy from "./pages/TheVideoCryptCaseStudy.jsx";
 
 function getInitialTheme() {
   try {
@@ -43,27 +41,22 @@ function App() {
 
   return (
     <div className="min-h-screen bg-page text-text-primary">
-      {/* Navigation */}
       <Navbar theme={theme} onThemeToggle={toggleTheme} />
 
       <main>
-        {/* Hero */}
-        <Hero />
-
-        {/* Featured Work */}
-        <FeaturedWork />
-
-        {/* About */}
-        <About />
-
-        {/* Skills */}
-        <Skills />
-
-        {/* Contact */}
-        <Contact />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route
+            path="/projects"
+            element={<Navigate to="/projects/the-video-crypt" replace />}
+          />
+          <Route
+            path="/projects/the-video-crypt"
+            element={<TheVideoCryptCaseStudy />}
+          />
+        </Routes>
       </main>
 
-      {/* Footer */}
       <Footer />
     </div>
   );

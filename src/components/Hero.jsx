@@ -21,16 +21,16 @@ function Hero() {
         id="home-heading"
         className="max-w-4xl text-5xl font-bold leading-[1.08] tracking-tight text-text-primary sm:text-6xl lg:text-7xl"
       >
-        Building thoughtful,
-        <span className="text-accent"> accessible </span>
-        digital experiences.
+        Turning designs into
+        <span className="text-accent"> working </span>
+        experiences.
       </h1>
 
       <p className="mt-8 max-w-2xl text-lg leading-relaxed text-text-secondary">
-        I bring eight years of web development experience to building responsive
-        interfaces, reusable UI components, and engaging web experiences. I
-        focus on translating designs into accessible, maintainable front-end
-        solutions.
+        I've spent eight years building and maintaining websites and web
+        applications. I enjoy bringing designs to life through code, creating
+        responsive interfaces and reusable components that work well for
+        everyone.
       </p>
 
       <div className="mt-10 flex flex-wrap gap-4">

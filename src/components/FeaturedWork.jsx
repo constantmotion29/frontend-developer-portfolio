@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function FeaturedWork() {
   const technologies = [
     "React",
@@ -28,9 +30,8 @@ function FeaturedWork() {
           </h2>
 
           <p className="mt-4 max-w-2xl leading-relaxed text-text-secondary">
-            Selected projects demonstrating my experience building responsive
-            interfaces, reusable components, and interactive web applications
-            with a focus on accessibility and maintainable code.
+            Here's a look at a project I've been working on, along with the
+            tools and ideas behind it.
           </p>
         </div>
 
@@ -50,7 +51,7 @@ function FeaturedWork() {
             {/* Project Details */}
             <div className="flex flex-col justify-center p-6 sm:p-10">
               <p className="text-sm font-medium text-accent">
-                React Application
+                Personal Project
               </p>
 
               <h3 className="mt-3 text-2xl font-bold text-text-primary">
@@ -58,10 +59,10 @@ function FeaturedWork() {
               </h3>
 
               <p className="mt-4 leading-relaxed text-text-secondary">
-                A vintage-inspired horror movie rental application built with
-                React and Express. Features a searchable, filterable movie
-                catalog, movie details powered by API integration, and an
-                interactive reservation system with persistent browser storage.
+                The Video Crypt is a horror movie rental app inspired by the
+                video stores I used to visit growing up. You can browse the
+                movie catalog, search for titles, check availability, view
+                movie details, and reserve movies.
               </p>
 
               <div className="mt-6 flex flex-wrap gap-2">
@@ -76,6 +77,13 @@ function FeaturedWork() {
               </div>
 
               <div className="mt-8 flex flex-wrap gap-6 text-sm font-medium">
+                <Link
+                  to="/projects/the-video-crypt"
+                  className="text-accent underline decoration-current underline-offset-4 transition-colors hover:decoration-current focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
+                >
+                  View Case Study <span aria-hidden="true">→</span>
+                </Link>
+
                 <a
                   href="https://video-crypt.vercel.app"
                   target="_blank"

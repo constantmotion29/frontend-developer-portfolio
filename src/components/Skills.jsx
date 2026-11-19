@@ -2,7 +2,7 @@ function Skills() {
   const skillGroups = [
     {
       title: "Front-end Development",
-      description: "Building responsive, maintainable web interfaces.",
+      description: "The languages and tools I use to build websites.",
       skills: [
         "HTML5",
         "CSS3 / Sass",
@@ -15,7 +15,7 @@ function Skills() {
     {
       title: "UI Engineering & Accessibility",
       description:
-        "Translating designs into reusable, accessible interfaces.",
+        "Working from designs and making sure interfaces work for everyone.",
       skills: [
         "Reusable UI Components",
         "Design-to-Code Implementation",
@@ -29,7 +29,7 @@ function Skills() {
     {
       title: "Modern Application Development",
       description:
-        "Building interactive applications and integrating services.",
+        "Tools and technologies I've used to build interactive applications.",
       skills: [
         "Tailwind CSS",
         "Vite",
@@ -43,8 +43,7 @@ function Skills() {
     },
     {
       title: "Development Tools & Automation",
-      description:
-        "Supporting efficient development and automation workflows.",
+      description: "Tools I use for development, testing, and automation.",
       skills: [
         "Git / GitHub",
         "VS Code",
@@ -60,7 +59,7 @@ function Skills() {
     {
       title: "CMS & Templating",
       description:
-        "Developing structured content systems and reusable templates.",
+        "Content management systems and templating technologies I've worked with.",
       skills: [
         "Cascade CMS",
         "Drupal",
@@ -91,9 +90,8 @@ function Skills() {
         </h2>
 
         <p className="mt-4 max-w-2xl leading-relaxed text-text-secondary">
-          A combination of established front-end development experience,
-          modern JavaScript technologies, UI engineering practices, and a
-          focus on accessible, maintainable interfaces.
+          Here's an overview of the technologies, tools, and platforms I've
+          worked with throughout my career and personal projects.
         </p>
 
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

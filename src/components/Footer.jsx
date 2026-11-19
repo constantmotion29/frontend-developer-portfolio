@@ -16,7 +16,7 @@ function Footer() {
             Résumé (PDF)
           </a>
 
-          <p>Built with React, Vite, and Tailwind CSS.</p>
+          <p>Made with React, Vite, and Tailwind CSS.</p>
         </div>
       </div>
     </footer>
