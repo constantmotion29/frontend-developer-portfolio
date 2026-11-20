@@ -164,7 +164,7 @@ function TheVideoCryptCaseStudy() {
               <div className="flex h-80 items-center justify-center overflow-hidden rounded-lg border border-border bg-[#111722] p-3">
                 <img
                   src="/images/video-crypt-reservations.png"
-                  alt="The Video Crypt reservation experience"
+                  alt="A Video Crypt reservation receipt showing a movie rental, confirmation number, and return date"
                   loading="lazy"
                   decoding="async"
                   className="h-full w-full object-contain"
@@ -264,10 +264,10 @@ function TheVideoCryptCaseStudy() {
             </p>
 
             <p>
-              I settled on a horror movie rental store. I used to visit video
-              stores almost every Friday, so the idea brought back some good
-              memories. Recreating a little of that experience as a website
-              sounded like a fun challenge.
+              A horror movie rental store felt like the right fit. It gave me an
+              opportunity to recreate the atmosphere of those neighborhood shops
+              while building something with real interactions and functionality
+              behind the design.
             </p>
           </CaseStudySection>
 
@@ -336,24 +336,27 @@ function TheVideoCryptCaseStudy() {
           >
             <p>
               I wanted the catalog to do more than display a collection of
-              hardcoded information. I added an Express backend that serves the
-              movie catalog and retrieves content ratings and additional movie
-              details from The Movie Database (TMDB).
+              hardcoded information. I added an Express backend that serves my
+              locally curated movie catalog, enriches it with content ratings,
+              and retrieves additional movie details from The Movie Database
+              (TMDB).
             </p>
 
             <p>
-              The React application makes requests to my own API endpoints, and
-              the backend handles communication with TMDB. This keeps the
-              external API integration separate from the interface and prevents
-              the TMDB API key from being exposed in the browser.
+              The React application communicates with my own API endpoints,
+              using a configurable base URL for local development and
+              production. The Express backend handles communication with TMDB,
+              keeping the external API integration separate from the interface
+              and preventing the TMDB API key from being exposed in the browser.
             </p>
 
             <p>
-              I also implemented caching for movie certifications to avoid
-              making the same external requests every time the catalog loads.
-              Along the way, I worked through loading states, request failures,
-              and error handling so the application could respond gracefully
-              when data wasn't available.
+              I also implemented a 24-hour in-memory cache for movie
+              certifications to avoid repeating the same external requests. The
+              integration includes request timeouts and error handling, allowing
+              the catalog to load even when certification data is unavailable.
+              Working through these details gave me a better understanding of
+              handling external API dependencies.
             </p>
           </CaseStudySection>
 
@@ -370,20 +373,20 @@ function TheVideoCryptCaseStudy() {
             </p>
 
             <p>
-              Reservations are saved in the browser using localStorage, so they
-              remain available when someone returns to the site using the same
-              browser. I had to work through how to keep that saved data in sync
-              with React state, restore existing reservations when the
-              application loads, and update the catalog as reservations change.
+              Reservations are saved in the browser using localStorage and
+              restored when the application loads. Each reservation includes a
+              confirmation number, reservation date, three-day rental period,
+              and rental price. I also added compatibility for an earlier
+              version of the reservation data as the application evolved.
             </p>
 
             <p>
-              The receipt also gives each reservation its own confirmation
-              number and due date, making the experience feel a little more like
-              an actual video rental. It's a front-end demonstration rather than
-              a shared rental system, but it gave me a chance to build a feature
-              involving persistent browser storage, application state, and
-              several connected interactions.
+              I used a custom React hook to manage reservation state, keep it
+              synchronized with browser storage, and derive reserved movie
+              information from the catalog. It's a front-end demonstration
+              rather than a shared rental system, but it gave me a chance to
+              build a feature involving persistent browser storage, application
+              state, and several connected interactions.
             </p>
           </CaseStudySection>
 
@@ -401,11 +404,10 @@ function TheVideoCryptCaseStudy() {
             <p>
               I used semantic HTML, visible keyboard focus indicators, and
               keyboard-accessible controls throughout the application. The
-              reservation receipt required some additional attention. I
-              implemented focus management when the dialog opens, restored focus
-              to the previous element when it closes, and made the background
-              content inert while the dialog is open so users can't accidentally
-              interact with it.
+              reservation receipt required some additional attention. I used a
+              native HTML dialog, managed focus when it opens, restored focus to
+              the previously focused element when it closes, and made the
+              background content inert while the dialog is open.
             </p>
 
             <p>
