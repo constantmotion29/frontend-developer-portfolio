@@ -71,12 +71,12 @@ function TheVideoCryptCaseStudy() {
             </p>
 
             <p className="mt-6 max-w-2xl leading-relaxed text-text-secondary">
-              The Video Crypt is a fictional horror movie rental store inspired
-              by the neighborhood video stores I used to visit almost every
-              Friday. I built it as a way to explore React and create something
-              of my own: a place where visitors can browse a movie collection,
-              look up details, check availability, and reserve their next horror
-              movie.
+              Inspired by the neighborhood video stores I used to visit almost
+              every Friday, The Video Crypt is a fictional horror rental shop
+              built with React. I wanted to create something of my own while
+              exploring modern front-end development, bringing together a
+              distinctive storefront, a searchable movie catalog, live movie
+              data, and an interactive reservation experience.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-5 text-sm font-medium">
@@ -307,26 +307,25 @@ function TheVideoCryptCaseStudy() {
               When I started, I was still getting comfortable with React. My
               first version had most of the application in App.jsx. That worked
               at first, but as I added more features, the file became harder to
-              manage.
+              manage and changes started affecting more of the application.
             </p>
 
             <p>
-              I started breaking the interface into smaller components and
-              moving related logic into custom hooks. That made it easier to
-              work on individual parts of the application without having
-              everything tied together.
+              I began breaking the interface into reusable components and moving
+              related logic into custom hooks. I created separate hooks for
+              loading the movie catalog, fetching additional movie details, and
+              managing reservations. This gave each part of the application a
+              clearer responsibility and made it easier to work on features
+              independently.
             </p>
 
             <p>
               I also separated the Express backend from the React application.
-              The front end handles the interface and user interactions, while
-              the backend handles API requests and communication with TMDB.
-            </p>
-
-            <p>
-              I ended up creating hooks for movie data, additional movie
-              details, and reservations. This helped keep data-related logic
-              separate from the components responsible for displaying it.
+              The front end is responsible for rendering the interface and
+              handling user interactions, while the backend manages API requests
+              and communication with TMDB. This kept the external data
+              integration separate from the parts of the application users
+              interact with.
             </p>
           </CaseStudySection>
 
@@ -337,23 +336,24 @@ function TheVideoCryptCaseStudy() {
           >
             <p>
               I wanted the catalog to do more than display a collection of
-              hardcoded information. I added an Express backend to serve the
-              movie catalog and retrieve content ratings and additional movie
+              hardcoded information. I added an Express backend that serves the
+              movie catalog and retrieves content ratings and additional movie
               details from The Movie Database (TMDB).
             </p>
 
             <p>
-              The front end makes requests to my own API endpoints, which
-              communicate with TMDB on the server. Keeping those requests on the
-              backend also means the TMDB API key isn't exposed in the browser.
+              The React application makes requests to my own API endpoints, and
+              the backend handles communication with TMDB. This keeps the
+              external API integration separate from the interface and prevents
+              the TMDB API key from being exposed in the browser.
             </p>
 
             <p>
-              I also added caching for movie certifications, so the application
-              doesn't need to make the same external request every time the
-              catalog loads. Working through the requests, loading states, and
-              error handling gave me a better understanding of how the front end
-              and backend work together.
+              I also implemented caching for movie certifications to avoid
+              making the same external requests every time the catalog loads.
+              Along the way, I worked through loading states, request failures,
+              and error handling so the application could respond gracefully
+              when data wasn't available.
             </p>
           </CaseStudySection>
 
@@ -364,23 +364,26 @@ function TheVideoCryptCaseStudy() {
           >
             <p>
               I wanted visitors to be able to do more than browse the movies.
-              The reservation feature lets them reserve titles, receive a
-              reservation receipt, and see availability update throughout the
-              catalog.
+              The reservation feature lets them reserve titles, view a
+              reservation receipt, cancel reservations, and see availability
+              update throughout the catalog.
             </p>
 
             <p>
               Reservations are saved in the browser using localStorage, so they
               remain available when someone returns to the site using the same
               browser. I had to work through how to keep that saved data in sync
-              with React state, including restoring reservations when the
-              application loads.
+              with React state, restore existing reservations when the
+              application loads, and update the catalog as reservations change.
             </p>
 
             <p>
-              It's a front-end demonstration rather than a shared rental system,
-              but it gave me a chance to build a feature that involves more than
-              simply displaying information.
+              The receipt also gives each reservation its own confirmation
+              number and due date, making the experience feel a little more like
+              an actual video rental. It's a front-end demonstration rather than
+              a shared rental system, but it gave me a chance to build a feature
+              involving persistent browser storage, application state, and
+              several connected interactions.
             </p>
           </CaseStudySection>
 
@@ -392,22 +395,25 @@ function TheVideoCryptCaseStudy() {
             <p>
               Accessibility is something I've worked with throughout my
               professional career, so I wanted it to be part of this project
-              from the beginning.
+              from the beginning rather than something added at the end.
             </p>
 
             <p>
-              I used semantic HTML, added visible keyboard focus indicators, and
-              made sure the main interactions could be used with a keyboard. The
-              reservation receipt also needed some extra attention: I added
-              focus management, restored focus when the dialog closes, and kept
-              the background content from receiving interaction while the dialog
-              is open.
+              I used semantic HTML, visible keyboard focus indicators, and
+              keyboard-accessible controls throughout the application. The
+              reservation receipt required some additional attention. I
+              implemented focus management when the dialog opens, restored focus
+              to the previous element when it closes, and made the background
+              content inert while the dialog is open so users can't accidentally
+              interact with it.
             </p>
 
             <p>
-              I also included reduced-motion support and checked the layouts at
-              different screen sizes and browser zoom levels to make sure the
-              application remained usable.
+              I also added reduced-motion support and checked the interface at
+              different screen sizes and browser zoom levels. I wanted the
+              experience to remain usable whether someone was navigating with a
+              keyboard, using a smaller screen, or enlarging the page to make
+              content easier to read.
             </p>
           </CaseStudySection>
 
@@ -431,9 +437,11 @@ function TheVideoCryptCaseStudy() {
             </p>
 
             <p>
-              It helped me get into the habit of checking that things work as
-              expected, rather than relying only on what I could see while
-              clicking around in the browser.
+              Across the application, backend, and Storybook projects, I now
+              have 94 automated tests passing. Building out this coverage helped
+              me get into the habit of checking that things work as expected,
+              rather than relying only on what I could see while clicking around
+              in the browser.
             </p>
           </CaseStudySection>
 
