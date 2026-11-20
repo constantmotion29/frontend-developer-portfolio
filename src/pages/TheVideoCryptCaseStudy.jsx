@@ -4,7 +4,7 @@ const technologies = [
   "React",
   "JavaScript",
   "Vite",
-  "CSS",
+  "Custom CSS",
   "Tailwind CSS",
   "Node.js",
   "Express",
@@ -12,7 +12,6 @@ const technologies = [
   "REST APIs",
   "Vitest",
   "React Testing Library",
-  "Playwright",
   "Storybook",
 ];
 
@@ -76,8 +75,8 @@ function TheVideoCryptCaseStudy() {
               by the neighborhood video stores I used to visit almost every
               Friday. I built it as a way to explore React and create something
               of my own: a place where visitors can browse a movie collection,
-              look up details, check availability, and reserve their next
-              horror movie.
+              look up details, check availability, and reserve their next horror
+              movie.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-5 text-sm font-medium">
@@ -114,7 +113,7 @@ function TheVideoCryptCaseStudy() {
         </div>
       </header>
 
-      {/* Application Screenshots */}
+      {/* Application screenshots */}
       <section
         aria-labelledby="screenshots-heading"
         className="border-t border-border px-6 py-16 sm:py-20"
@@ -132,12 +131,12 @@ function TheVideoCryptCaseStudy() {
           </h2>
 
           <p className="mt-4 max-w-2xl leading-relaxed text-text-secondary">
-            From browsing the collection to reserving a movie, here are a few
-            of the features that bring the store to life.
+            From browsing the collection to reserving a movie, here are a few of
+            the features that bring the store to life.
           </p>
 
           <div className="mt-10 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {/* Movie Catalog */}
+            {/* Movie catalog */}
             <figure className="min-w-0">
               <div className="flex h-80 items-center justify-center overflow-hidden rounded-lg border border-border bg-[#111722] p-3">
                 <img
@@ -154,8 +153,8 @@ function TheVideoCryptCaseStudy() {
                   The Movie Catalog
                 </h3>
                 <p className="mt-1 text-sm text-text-secondary">
-                  Browse the collection, search for movies, and filter titles
-                  by availability.
+                  Browse the collection, search for movies, and filter titles by
+                  availability.
                 </p>
               </figcaption>
             </figure>
@@ -177,13 +176,13 @@ function TheVideoCryptCaseStudy() {
                   Movie Reservations
                 </h3>
                 <p className="mt-1 text-sm text-text-secondary">
-                  Reserve a title, view a reservation receipt, and keep track
-                  of availability.
+                  Reserve a title, view a reservation receipt, and keep track of
+                  availability.
                 </p>
               </figcaption>
             </figure>
 
-            {/* Mobile Experience */}
+            {/* Mobile experience */}
             <figure className="min-w-0">
               <div className="flex h-80 items-center justify-center overflow-hidden rounded-lg border border-border bg-[#111722] p-3">
                 <img
@@ -240,6 +239,7 @@ function TheVideoCryptCaseStudy() {
         </div>
       </div>
 
+      {/* Case study sections */}
       <div className="px-6">
         <div className="mx-auto max-w-6xl">
           <CaseStudySection
@@ -277,8 +277,15 @@ function TheVideoCryptCaseStudy() {
             <p>
               I worked out the visual style as I built the application.
               Typography, colors, textures, and layout all helped create the
-              atmosphere. The design wasn't something I finished before
-              writing code; it developed alongside the project.
+              atmosphere. The design wasn't something I finished before writing
+              code; it developed alongside the project.
+            </p>
+
+            <p>
+              I also wanted the interface to feel interactive, not just look the
+              part. I built reusable movie cards, search and filtering controls,
+              expandable movie details, and reservation interactions. Each piece
+              needed to work together while keeping the catalog easy to browse.
             </p>
           </CaseStudySection>
 
@@ -289,9 +296,9 @@ function TheVideoCryptCaseStudy() {
           >
             <p>
               When I started, I was still getting comfortable with React. My
-              first version had most of the application in App.jsx. That
-              worked at first, but as I added more features, the file became
-              harder to manage.
+              first version had most of the application in App.jsx. That worked
+              at first, but as I added more features, the file became harder to
+              manage.
             </p>
 
             <p>
@@ -299,6 +306,12 @@ function TheVideoCryptCaseStudy() {
               moving related logic into custom hooks. That made it easier to
               work on individual parts of the application without having
               everything tied together.
+            </p>
+
+            <p>
+              I also separated the Express backend from the React application.
+              The front end handles the interface and user interactions, while
+              the backend handles API requests and communication with TMDB.
             </p>
 
             <p>
@@ -322,17 +335,16 @@ function TheVideoCryptCaseStudy() {
 
             <p>
               The front end makes requests to my own API endpoints, which
-              communicate with TMDB on the server. Keeping those requests on
-              the backend also means the TMDB API key isn't exposed in the
-              browser.
+              communicate with TMDB on the server. Keeping those requests on the
+              backend also means the TMDB API key isn't exposed in the browser.
             </p>
 
             <p>
-              I also added caching for movie certifications, so the
-              application doesn't need to make the same external request every
-              time the catalog loads. Working through the requests, loading
-              states, and error handling gave me a better understanding of how
-              the front end and backend work together.
+              I also added caching for movie certifications, so the application
+              doesn't need to make the same external request every time the
+              catalog loads. Working through the requests, loading states, and
+              error handling gave me a better understanding of how the front end
+              and backend work together.
             </p>
           </CaseStudySection>
 
@@ -349,17 +361,17 @@ function TheVideoCryptCaseStudy() {
             </p>
 
             <p>
-              Reservations are saved in the browser using localStorage, so
-              they remain available when someone returns to the site using
-              the same browser. I had to work through how to keep that saved
-              data in sync with React state, including restoring reservations
-              when the application loads.
+              Reservations are saved in the browser using localStorage, so they
+              remain available when someone returns to the site using the same
+              browser. I had to work through how to keep that saved data in sync
+              with React state, including restoring reservations when the
+              application loads.
             </p>
 
             <p>
-              It's a front-end demonstration rather than a shared rental
-              system, but it gave me a chance to build a feature that involves
-              more than simply displaying information.
+              It's a front-end demonstration rather than a shared rental system,
+              but it gave me a chance to build a feature that involves more than
+              simply displaying information.
             </p>
           </CaseStudySection>
 
@@ -375,18 +387,18 @@ function TheVideoCryptCaseStudy() {
             </p>
 
             <p>
-              I used semantic HTML, added visible keyboard focus indicators,
-              and made sure the main interactions could be used with a
-              keyboard. The reservation receipt also needed some extra
-              attention: I added focus management, restored focus when the
-              dialog closes, and kept the background content from receiving
-              interaction while the dialog is open.
+              I used semantic HTML, added visible keyboard focus indicators, and
+              made sure the main interactions could be used with a keyboard. The
+              reservation receipt also needed some extra attention: I added
+              focus management, restored focus when the dialog closes, and kept
+              the background content from receiving interaction while the dialog
+              is open.
             </p>
 
             <p>
-              I also included reduced-motion support and checked the layouts
-              at different screen sizes and browser zoom levels to make sure
-              the application remained usable.
+              I also included reduced-motion support and checked the layouts at
+              different screen sizes and browser zoom levels to make sure the
+              application remained usable.
             </p>
           </CaseStudySection>
 
@@ -402,11 +414,11 @@ function TheVideoCryptCaseStudy() {
             </p>
 
             <p>
-              I used Vitest and React Testing Library for the front-end
-              components, and added tests for the Express routes and TMDB
-              integration. I also set up Storybook to work with components
-              independently, with browser-based component testing, and used
-              Playwright for end-to-end testing.
+              I used Vitest and React Testing Library for front-end component
+              and hook tests, and added tests for the Express routes and TMDB
+              integration. I also set up Storybook to develop and test
+              components independently, including browser-based component
+              testing.
             </p>
 
             <p>
@@ -422,18 +434,18 @@ function TheVideoCryptCaseStudy() {
             title="Learning by building"
           >
             <p>
-              This project gave me a chance to work through parts of
-              application development that I hadn't used together in one
-              project before. I got more comfortable with React components,
-              props, state, and hooks, while also learning how to organize an
-              application, work with an API, and test different parts of it.
+              This project gave me a chance to bring together parts of web
+              development that I hadn't used in one application before. I got
+              more comfortable working with React components, props, state, and
+              hooks, while learning how to organize a larger application,
+              connect it to an API, and test different parts of it.
             </p>
 
             <p>
-              I relied on documentation, tutorials, experimentation, and
-              ChatGPT to help me understand problems and work through things I
-              hadn't encountered before. There was plenty of trial and error,
-              especially as the application became more involved.
+              There was plenty of trial and error along the way. I spent time
+              reading documentation, experimenting with different approaches,
+              and working through problems as they came up. Each new feature
+              gave me something else to figure out.
             </p>
 
             <p>
@@ -450,15 +462,15 @@ function TheVideoCryptCaseStudy() {
             title="There's more I'd like to add"
           >
             <p>
-              I still have ideas for the project, including expanding the
-              movie collection, adding more ways to discover titles, and
-              building out more detailed movie pages.
+              I still have ideas for the project, including expanding the movie
+              collection, adding more ways to discover titles, and building out
+              more detailed movie pages.
             </p>
 
             <p>
-              For now, I'm happy with how far it has come. It's been a great
-              way to learn by doing, try out new tools, and build something
-              that feels like my own.
+              For now, I'm happy with how far it has come. It's been a great way
+              to learn by doing, try out new tools, and build something that
+              feels like my own.
             </p>
           </CaseStudySection>
         </div>
@@ -471,9 +483,7 @@ function TheVideoCryptCaseStudy() {
             Tools & technologies
           </p>
 
-          <h2 className="text-2xl font-bold text-text-primary">
-            Built with
-          </h2>
+          <h2 className="text-2xl font-bold text-text-primary">Built with</h2>
 
           <div className="mt-8 flex flex-wrap gap-3">
             {technologies.map((technology) => (
