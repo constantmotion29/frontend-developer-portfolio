@@ -209,7 +209,7 @@ function TheVideoCryptCaseStudy() {
 
       {/* Project overview */}
       <div className="border-y border-border bg-surface px-6 py-10">
-        <div className="mx-auto grid max-w-6xl gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto grid max-w-6xl gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <p className="text-xs font-medium uppercase tracking-wider text-text-secondary">
               Project type
@@ -234,6 +234,15 @@ function TheVideoCryptCaseStudy() {
             </p>
             <p className="mt-2 font-medium text-text-primary">
               React · JavaScript · Express
+            </p>
+          </div>
+
+          <div>
+            <p className="text-xs font-medium uppercase tracking-wider text-text-secondary">
+              Movie collection
+            </p>
+            <p className="mt-2 font-medium text-text-primary">
+              9 curated horror titles
             </p>
           </div>
         </div>
