@@ -128,6 +128,41 @@ frontend-developer-portfolio/
 ├── src/
 │   ├── components/
 │   │   ├── About.jsx
+│   │   ├── About.stories.jsx
+│   │   ├── Contact.jsx
+│   │   ├── Contact.stories.jsx
+│   │   ├── FeaturedWork.jsx
+│   │   ├── FeaturedWork.stories.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Footer.stories.jsx
+│   │   ├── Hero.jsx
+│   │   ├── Hero.stories.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── Navbar.stories.jsx
+│   │   ├── Skills.jsx
+│   │   └── Skills.stories.jsx
+│   ├── pages/
+│   │   ├── HomePage.jsx
+│   │   └── TheVideoCryptCaseStudy.jsx
+│   ├── App.jsx
+│   └── index.css
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+└── vite.config.js
+```
+
+```text
+frontend-developer-portfolio/
+├── .storybook/
+│   ├── main.js
+│   └── preview.jsx
+├── public/
+│   └── images/
+├── src/
+│   ├── components/
+│   │   ├── About.jsx
 │   │   ├── Contact.jsx
 │   │   ├── FeaturedWork.jsx
 │   │   ├── Footer.jsx
