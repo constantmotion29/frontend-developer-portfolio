@@ -40,7 +40,7 @@ function FeaturedWork() {
             {/* Project Preview */}
             <div className="flex items-center justify-center overflow-hidden bg-[#111722] p-4 sm:p-6">
               <img
-                src="/images/video-crypt-preview.png"
+                src="/images/video-crypt-preview.webp"
                 alt="The Video Crypt horror movie rental application showing its movie catalog"
                 loading="lazy"
                 decoding="async"
