@@ -104,7 +104,7 @@ function TheVideoCryptCaseStudy() {
 
           <div className="mt-12 overflow-hidden rounded-xl border border-border bg-[#111722] p-3 sm:mt-16 sm:p-5">
             <img
-              src="/images/video-crypt-preview.png"
+              src="/images/video-crypt-preview.webp"
               alt="The Video Crypt movie rental application displaying its horror movie catalog"
               className="h-auto w-full rounded-lg transition-transform duration-300 ease-out motion-reduce:transition-none hover:scale-[1.04]"
               fetchPriority="high"
@@ -140,7 +140,7 @@ function TheVideoCryptCaseStudy() {
             <figure className="min-w-0">
               <div className="flex h-80 items-center justify-center overflow-hidden rounded-lg border border-border bg-[#111722] p-3">
                 <img
-                  src="/images/video-crypt-catalog.png"
+                  src="/images/video-crypt-catalog.webp"
                   alt="The Video Crypt movie catalog displaying its horror movie collection"
                   loading="lazy"
                   decoding="async"
@@ -163,7 +163,7 @@ function TheVideoCryptCaseStudy() {
             <figure className="min-w-0">
               <div className="flex h-80 items-center justify-center overflow-hidden rounded-lg border border-border bg-[#111722] p-3">
                 <img
-                  src="/images/video-crypt-reservations.png"
+                  src="/images/video-crypt-reservations.webp"
                   alt="A Video Crypt reservation receipt showing a movie rental, confirmation number, and return date"
                   loading="lazy"
                   decoding="async"
@@ -186,7 +186,7 @@ function TheVideoCryptCaseStudy() {
             <figure className="min-w-0">
               <div className="flex h-80 items-center justify-center overflow-hidden rounded-lg border border-border bg-[#111722] p-3">
                 <img
-                  src="/images/video-crypt-mobile.png"
+                  src="/images/video-crypt-mobile.webp"
                   alt="The Video Crypt application displayed on a mobile viewport"
                   loading="lazy"
                   decoding="async"
