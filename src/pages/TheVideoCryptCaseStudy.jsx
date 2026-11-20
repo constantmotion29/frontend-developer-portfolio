@@ -75,8 +75,8 @@ function TheVideoCryptCaseStudy() {
               every Friday, The Video Crypt is a fictional horror rental shop
               built with React. I wanted to create something of my own while
               exploring modern front-end development, bringing together a
-              distinctive storefront, a searchable movie catalog, live movie
-              data, and an interactive reservation experience.
+              retro-inspired storefront, a searchable movie catalog, live
+              movie data, and an interactive reservation experience.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-5 text-sm font-medium">
@@ -106,7 +106,7 @@ function TheVideoCryptCaseStudy() {
             <img
               src="/images/video-crypt-preview.png"
               alt="The Video Crypt movie rental application displaying its horror movie catalog"
-              className="h-auto w-full rounded-lg"
+              className="h-auto w-full rounded-lg transition-transform duration-300 ease-out motion-reduce:transition-none hover:scale-[1.04]"
               fetchPriority="high"
             />
           </div>
@@ -144,7 +144,7 @@ function TheVideoCryptCaseStudy() {
                   alt="The Video Crypt movie catalog displaying its horror movie collection"
                   loading="lazy"
                   decoding="async"
-                  className="h-full w-full object-contain"
+                  className="h-full w-full object-contain transition-transform duration-300 ease-out motion-reduce:transition-none hover:scale-[1.04]"
                 />
               </div>
 
@@ -167,7 +167,7 @@ function TheVideoCryptCaseStudy() {
                   alt="A Video Crypt reservation receipt showing a movie rental, confirmation number, and return date"
                   loading="lazy"
                   decoding="async"
-                  className="h-full w-full object-contain"
+                  className="h-full w-full object-contain transition-transform duration-300 ease-out motion-reduce:transition-none hover:scale-[1.04]"
                 />
               </div>
 
@@ -190,7 +190,7 @@ function TheVideoCryptCaseStudy() {
                   alt="The Video Crypt application displayed on a mobile viewport"
                   loading="lazy"
                   decoding="async"
-                  className="h-full w-full object-contain"
+                  className="h-full w-full object-contain transition-transform duration-300 ease-out motion-reduce:transition-none hover:scale-[1.04]"
                 />
               </div>
 
