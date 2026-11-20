@@ -44,7 +44,7 @@ function FeaturedWork() {
                 alt="The Video Crypt horror movie rental application showing its movie catalog"
                 loading="lazy"
                 decoding="async"
-                className="aspect-video w-full rounded-lg object-contain object-center"
+                className="aspect-video w-full rounded-lg object-contain object-center transition-transform duration-300 ease-out hover:scale-[1.04] motion-reduce:transition-none"
               />
             </div>
 
