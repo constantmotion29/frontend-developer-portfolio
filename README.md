@@ -2,7 +2,9 @@
 
 A personal portfolio showcasing my front-end development experience, UI engineering skills, and approach to building responsive, accessible web experiences.
 
-Built with React, Vite, and Tailwind CSS, the portfolio features a component-based architecture and uses Storybook for component development and documentation.
+Built with React, Vite, and Tailwind CSS, the portfolio features a component-based architecture with reusable UI components and Storybook for component development and documentation.
+
+**[View Live Portfolio](https://anna-wesolowski.vercel.app)**
 
 ## Tech Stack
 
@@ -22,19 +24,23 @@ Built with React, Vite, and Tailwind CSS, the portfolio features a component-bas
 - Reduced-motion support
 - Dedicated component stories in Storybook
 - Featured project showcase with live demo and GitHub links
+- Contact section with links to professional profiles
 
 ## Featured Project
 
 ### The Video Crypt
 
-A vintage-inspired horror movie rental application built with React and Express.
+A vintage-inspired horror movie rental application built with React and Express, combining a nostalgic video store aesthetic with modern frontend development practices.
 
 Features include:
-- Interactive movie catalog
-- API integration
-- Search and filtering
-- Reservation functionality
+
+- Interactive horror movie catalog
+- Server-side TMDB API integration
+- Search and filtering functionality
+- Movie detail expansion
+- Reservation management and confirmation receipts
 - Persistent browser storage
+- Responsive layouts and accessible interactions
 
 **[Live Demo](https://video-crypt.vercel.app)** · **[GitHub Repository](https://github.com/constantmotion29/video-crypt)**
 
@@ -50,7 +56,7 @@ Features include:
 Clone the repository and navigate to the project directory:
 
 ```bash
-git clone https://github.com/constantmotion29/frontend-developer-portfolio
+git clone https://github.com/constantmotion29/frontend-developer-portfolio.git
 cd frontend-developer-portfolio
 ```
 
@@ -91,19 +97,24 @@ npm run storybook
 
 The development server runs at `http://localhost:6006`.
 
+To create a production build of Storybook:
+
+```bash
+npm run build-storybook
+```
+
 ## Accessibility
 
 Accessibility is an important consideration throughout the project.
 
 Implementation includes:
+
 - Semantic HTML and accessible section headings
 - Keyboard navigation and visible focus indicators
 - Descriptive accessible names for interactive elements
 - Reduced-motion preferences
 - Responsive layouts and zoom support
 - Storybook accessibility checks
-
-The application has also been evaluated using keyboard testing, screen reader testing, and Lighthouse accessibility audits.
 
 ## Project Structure
 
@@ -131,6 +142,14 @@ frontend-developer-portfolio/
 ├── package.json
 └── vite.config.js
 ```
+
+## Deployment
+
+The portfolio is deployed on [Vercel](https://vercel.com/).
+
+**[anna-wesolowski.vercel.app](https://anna-wesolowski.vercel.app)**
+
+The project is connected to GitHub, allowing changes pushed to the repository to trigger automatic deployments.
 
 ## License
 
