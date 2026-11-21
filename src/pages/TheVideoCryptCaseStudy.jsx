@@ -75,8 +75,8 @@ function TheVideoCryptCaseStudy() {
               every Friday, The Video Crypt is a fictional horror rental shop
               built with React. I wanted to create something of my own while
               exploring modern front-end development, bringing together a
-              retro-inspired storefront, a searchable movie catalog, live
-              movie data, and an interactive reservation experience.
+              retro-inspired storefront, a searchable movie catalog, live movie
+              data, and an interactive reservation experience.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-5 text-sm font-medium">
@@ -86,7 +86,21 @@ function TheVideoCryptCaseStudy() {
                 rel="noopener noreferrer"
                 className="text-accent underline underline-offset-4 hover:decoration-current focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
               >
-                Live Demo ↗
+                Live Demo{" "}
+                <svg
+                  aria-hidden="true"
+                  viewBox="0 0 16 16"
+                  width="14"
+                  height="14"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="inline-block"
+                >
+                  <path d="M4 12 12 4M5 4h7v7" />
+                </svg>
                 <span className="sr-only"> (opens in a new tab)</span>
               </a>
 
@@ -96,7 +110,21 @@ function TheVideoCryptCaseStudy() {
                 rel="noopener noreferrer"
                 className="text-text-primary underline underline-offset-4 hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
               >
-                GitHub Repository ↗
+                GitHub Repository{" "}
+                <svg
+                  aria-hidden="true"
+                  viewBox="0 0 16 16"
+                  width="14"
+                  height="14"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="inline-block"
+                >
+                  <path d="M4 12 12 4M5 4h7v7" />
+                </svg>
                 <span className="sr-only"> (opens in a new tab)</span>
               </a>
             </div>
@@ -535,7 +563,21 @@ function TheVideoCryptCaseStudy() {
               rel="noopener noreferrer"
               className="text-accent underline underline-offset-4 hover:decoration-current focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
             >
-              Visit Live Demo ↗
+              Visit Live Demo{" "}
+              <svg
+                aria-hidden="true"
+                viewBox="0 0 16 16"
+                width="14"
+                height="14"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="inline-block"
+              >
+                <path d="M4 12 12 4M5 4h7v7" />
+              </svg>
               <span className="sr-only"> (opens in a new tab)</span>
             </a>
 
@@ -545,7 +587,21 @@ function TheVideoCryptCaseStudy() {
               rel="noopener noreferrer"
               className="text-text-primary underline underline-offset-4 hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
             >
-              Explore GitHub Repository ↗
+              Explore GitHub Repository{" "}
+              <svg
+                aria-hidden="true"
+                viewBox="0 0 16 16"
+                width="14"
+                height="14"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="inline-block"
+              >
+                <path d="M4 12 12 4M5 4h7v7" />
+              </svg>
               <span className="sr-only"> (opens in a new tab)</span>
             </a>
 
