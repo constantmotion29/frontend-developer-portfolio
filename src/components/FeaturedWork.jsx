@@ -88,7 +88,21 @@ function FeaturedWork() {
                   to="/projects/the-video-crypt"
                   className="text-accent underline decoration-current underline-offset-4 transition-colors hover:decoration-current focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
                 >
-                  View Case Study <span aria-hidden="true">→</span>
+                  View Case Study{" "}
+                  <svg
+                    aria-hidden="true"
+                    viewBox="0 0 16 16"
+                    width="14"
+                    height="14"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="inline-block"
+                  >
+                    <path d="M3 8h10M8 3l5 5-5 5" />
+                  </svg>
                 </Link>
 
                 <a
