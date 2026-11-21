@@ -13,6 +13,55 @@ const PAGE_DESCRIPTION =
   "Explore The Video Crypt, a horror movie rental application built with React, Vite, Express, and accessible UI patterns. See the design, architecture, integrations, and testing behind the project.";
 const PREVIEW_IMAGE = `${SITE_URL}/images/video-crypt-preview.webp`;
 
+const PROJECT_SCHEMA = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": `${SITE_URL}/#person`,
+      name: "Anna Wesolowski",
+      url: `${SITE_URL}/`,
+      jobTitle: "Front-End Developer",
+      sameAs: [
+        "https://www.linkedin.com/in/annawesolowski",
+        "https://github.com/constantmotion29",
+      ],
+      knowsAbout: [
+        "Front-End Development",
+        "UI Engineering",
+        "Web Accessibility",
+        "Responsive Web Design",
+      ],
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": `${PAGE_URL}#application`,
+      name: "The Video Crypt",
+      url: "https://video-crypt.vercel.app/",
+      applicationCategory: "WebApplication",
+      operatingSystem: "Web",
+      description:
+        "A fictional horror movie rental storefront featuring a searchable movie catalog, movie details, and interactive reservations.",
+      image: PREVIEW_IMAGE,
+      author: {
+        "@id": `${SITE_URL}/#person`,
+      },
+      keywords: [
+        "React",
+        "JavaScript",
+        "Vite",
+        "Node.js",
+        "Express",
+        "TMDB API",
+        "Vitest",
+        "React Testing Library",
+        "Storybook",
+        "Web accessibility",
+      ],
+    },
+  ],
+};
+
 function replaceTag(html, pattern, replacement, name) {
   if (!pattern.test(html)) {
     throw new Error(`Could not find the existing ${name} tag.`);
@@ -45,13 +94,19 @@ async function prerender() {
     "description",
   );
 
-  // Remove the original homepage social metadata before adding page-specific tags.
+  // Remove the original homepage social metadata.
   html = html.replace(
     /<meta\s+property="og:(?:url|title|description|image)"[\s\S]*?>/gi,
     "",
   );
 
   html = html.replace(/<meta\s+name="twitter:[^"]+"[\s\S]*?>/gi, "");
+
+  // Replace homepage structured data with project-specific structured data.
+  html = html.replace(
+    /<script\s+type="application\/ld\+json">[\s\S]*?<\/script>/gi,
+    "",
+  );
 
   const metadata = [
     `<meta property="og:url" content="${PAGE_URL}" />`,
@@ -68,6 +123,10 @@ async function prerender() {
     /(<meta property="og:type"[^>]*>)/i,
     `$1\n    ${metadata}`,
   );
+
+  const structuredData = `<script type="application/ld+json">\n${JSON.stringify(PROJECT_SCHEMA, null, 2)}\n</script>`;
+
+  html = html.replace("</head>", `    ${structuredData}\n  </head>`);
 
   await mkdir(OUTPUT_DIR, { recursive: true });
   await writeFile(OUTPUT_FILE, html, "utf8");
