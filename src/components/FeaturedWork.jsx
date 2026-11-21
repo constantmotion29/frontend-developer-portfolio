@@ -99,13 +99,11 @@ function FeaturedWork() {
                   className="text-accent underline decoration-current underline-offset-4 transition-colors hover:decoration-current focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
                 >
                   Live Demo{" "}
-                  <span aria-hidden="true">
-                    <ExternalLink
-                      size={14}
-                      aria-hidden="true"
-                      className="inline-block"
-                    />
-                  </span>
+                  <ExternalLink
+                    size={14}
+                    aria-hidden="true"
+                    className="inline-block"
+                  />
                   <span className="sr-only"> (opens in a new tab)</span>
                 </a>
 
@@ -116,13 +114,11 @@ function FeaturedWork() {
                   className="text-text-primary underline decoration-current underline-offset-4 transition-colors hover:text-accent hover:decoration-current focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
                 >
                   GitHub Repository{" "}
-                  <span aria-hidden="true">
-                    <ExternalLink
-                      size={14}
-                      aria-hidden="true"
-                      className="inline-block"
-                    />
-                  </span>
+                  <ExternalLink
+                    size={14}
+                    aria-hidden="true"
+                    className="inline-block"
+                  />
                   <span className="sr-only"> (opens in a new tab)</span>
                 </a>
               </div>
