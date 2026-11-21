@@ -4,7 +4,7 @@ A personal portfolio showcasing my front-end development experience, UI engineer
 
 Built with React, Vite, and Tailwind CSS, the portfolio features a component-based architecture with reusable UI components and Storybook for component development and documentation.
 
-**[View Live Portfolio](https://anna-wesolowski.vercel.app)**
+**[View Live Portfolio](https://anna-wesolowski.vercel.app/)**
 
 ## Tech Stack
 
@@ -42,7 +42,7 @@ Features include:
 - Persistent browser storage
 - Responsive layouts and accessible interactions
 
-**[Live Demo](https://video-crypt.vercel.app)** · **[GitHub Repository](https://github.com/constantmotion29/video-crypt)**
+**[Live Demo](https://video-crypt.vercel.app/)** · **[GitHub Repository](https://github.com/constantmotion29/video-crypt)**
 
 ## Getting Started
 
@@ -79,7 +79,7 @@ Vite will provide a local development URL in the terminal.
 | Command | Description |
 |---|---|
 | `npm run dev` | Starts the Vite development server |
-| `npm run build` | Builds the application for production |
+| `npm run build` | Builds the application for production and prerenders the project case study |
 | `npm run preview` | Previews the production build locally |
 | `npm run lint` | Runs ESLint |
 | `npm run storybook` | Starts the Storybook development server |
@@ -116,6 +116,23 @@ Implementation includes:
 - Responsive layouts and zoom support
 - Storybook accessibility checks
 
+## SEO & Search Engine Optimization
+
+Search engine discoverability is supported through page-specific metadata, structured data, and sitemap configuration.
+
+Implementation includes:
+
+- Page-specific titles and meta descriptions
+- Canonical URLs to identify preferred page addresses
+- Open Graph and Twitter Card metadata for social sharing
+- Prerendered HTML and metadata for the featured project case study
+- XML sitemap (`sitemap.xml`) listing the homepage and case study
+- `robots.txt` with sitemap discovery information
+- JSON-LD structured data using Schema.org vocabulary:
+  - `Person` and `WebSite` on the homepage
+  - `Person` and `SoftwareApplication` on the Video Crypt case study
+- Google Search Console ownership verification and sitemap submission
+
 ## Project Structure
 
 ```text
@@ -124,7 +141,22 @@ frontend-developer-portfolio/
 │   ├── main.js
 │   └── preview.jsx
 ├── public/
-│   └── images/
+│   ├── images/
+│   │   ├── video-crypt-catalog.webp
+│   │   ├── video-crypt-mobile.webp
+│   │   ├── video-crypt-preview.webp
+│   │   └── video-crypt-reservations.webp
+│   ├── Anna_Wesolowski_Resume.pdf
+│   ├── apple-touch-icon.png
+│   ├── favicon-32x32.png
+│   ├── favicon.svg
+│   ├── icons.svg
+│   ├── robots.txt
+│   ├── sitemap.xml
+│   └── social-preview.png
+├── scripts/
+│   ├── generate-icons.mjs
+│   └── prerender-routes.js
 ├── src/
 │   ├── components/
 │   │   ├── About.jsx
@@ -145,36 +177,15 @@ frontend-developer-portfolio/
 │   │   ├── HomePage.jsx
 │   │   └── TheVideoCryptCaseStudy.jsx
 │   ├── App.jsx
-│   └── index.css
+│   ├── index.css
+│   └── main.jsx
 ├── .gitignore
 ├── eslint.config.js
 ├── index.html
 ├── package.json
-└── vite.config.js
-```
-
-```text
-frontend-developer-portfolio/
-├── .storybook/
-│   ├── main.js
-│   └── preview.jsx
-├── public/
-│   └── images/
-├── src/
-│   ├── components/
-│   │   ├── About.jsx
-│   │   ├── Contact.jsx
-│   │   ├── FeaturedWork.jsx
-│   │   ├── Footer.jsx
-│   │   ├── Hero.jsx
-│   │   ├── Navbar.jsx
-│   │   └── Skills.jsx
-│   ├── App.jsx
-│   └── index.css
-├── .gitignore
-├── eslint.config.js
-├── index.html
-├── package.json
+├── package-lock.json
+├── README.md
+├── vercel.json
 └── vite.config.js
 ```
 
@@ -182,7 +193,7 @@ frontend-developer-portfolio/
 
 The portfolio is deployed on [Vercel](https://vercel.com/).
 
-**[anna-wesolowski.vercel.app](https://anna-wesolowski.vercel.app)**
+**[anna-wesolowski.vercel.app](https://anna-wesolowski.vercel.app/)**
 
 The project is connected to GitHub, allowing changes pushed to the repository to trigger automatic deployments.
 
