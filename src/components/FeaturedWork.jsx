@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { ExternalLink } from "lucide-react";
 
 function FeaturedWork() {
   const technologies = [
@@ -64,12 +65,12 @@ function FeaturedWork() {
               </h3>
 
               <p className="mt-4 leading-relaxed text-text-secondary">
-                A horror movie rental application inspired by the video stores
-                I visited growing up. Built with React and Express, it features
-                a searchable movie catalog, API-powered movie details,
-                interactive reservations, and reusable interface components.
-                The project also explores accessible interaction patterns,
-                component documentation, and automated testing.
+                A horror movie rental application inspired by the video stores I
+                visited growing up. Built with React and Express, it features a
+                searchable movie catalog, API-powered movie details, interactive
+                reservations, and reusable interface components. The project
+                also explores accessible interaction patterns, component
+                documentation, and automated testing.
               </p>
 
               <div className="mt-6 flex flex-wrap gap-2">
@@ -97,7 +98,14 @@ function FeaturedWork() {
                   rel="noopener noreferrer"
                   className="text-accent underline decoration-current underline-offset-4 transition-colors hover:decoration-current focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
                 >
-                  Live Demo <span aria-hidden="true">↗</span>
+                  Live Demo{" "}
+                  <span aria-hidden="true">
+                    <ExternalLink
+                      size={14}
+                      aria-hidden="true"
+                      className="inline-block"
+                    />
+                  </span>
                   <span className="sr-only"> (opens in a new tab)</span>
                 </a>
 
@@ -107,7 +115,14 @@ function FeaturedWork() {
                   rel="noopener noreferrer"
                   className="text-text-primary underline decoration-current underline-offset-4 transition-colors hover:text-accent hover:decoration-current focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
                 >
-                  GitHub Repository <span aria-hidden="true">↗</span>
+                  GitHub Repository{" "}
+                  <span aria-hidden="true">
+                    <ExternalLink
+                      size={14}
+                      aria-hidden="true"
+                      className="inline-block"
+                    />
+                  </span>
                   <span className="sr-only"> (opens in a new tab)</span>
                 </a>
               </div>
