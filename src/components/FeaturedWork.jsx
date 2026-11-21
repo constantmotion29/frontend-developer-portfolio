@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { ExternalLink } from "lucide-react";
 
 function FeaturedWork() {
   const technologies = [
@@ -99,11 +98,20 @@ function FeaturedWork() {
                   className="text-accent underline decoration-current underline-offset-4 transition-colors hover:decoration-current focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
                 >
                   Live Demo{" "}
-                  <ExternalLink
-                    size={14}
+                  <svg
                     aria-hidden="true"
+                    viewBox="0 0 16 16"
+                    width="14"
+                    height="14"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     className="inline-block"
-                  />
+                  >
+                    <path d="M4 12 12 4M5 4h7v7" />
+                  </svg>
                   <span className="sr-only"> (opens in a new tab)</span>
                 </a>
 
@@ -114,11 +122,20 @@ function FeaturedWork() {
                   className="text-text-primary underline decoration-current underline-offset-4 transition-colors hover:text-accent hover:decoration-current focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
                 >
                   GitHub Repository{" "}
-                  <ExternalLink
-                    size={14}
+                  <svg
                     aria-hidden="true"
+                    viewBox="0 0 16 16"
+                    width="14"
+                    height="14"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     className="inline-block"
-                  />
+                  >
+                    <path d="M4 12 12 4M5 4h7v7" />
+                  </svg>
                   <span className="sr-only"> (opens in a new tab)</span>
                 </a>
               </div>
