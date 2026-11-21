@@ -55,12 +55,18 @@ body {
   background: var(--page-bg);
 }
 
+/* Keep section headings clear of the navigation when using anchor links. */
+section[id] {
+  scroll-margin-top: 1.5rem;
+}
+
 /* Keyboard accessibility */
 :focus-visible {
   outline: 2px solid var(--focus);
   outline-offset: 4px;
 }
 
+/* Respect reduced-motion preferences. */
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -71,11 +77,10 @@ body {
   *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
   }
-}
 
-@media (prefers-reduced-motion: reduce) {
   .project-image img {
     transition: none;
   }

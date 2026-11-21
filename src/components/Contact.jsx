@@ -14,13 +14,15 @@ function Contact() {
           id="contact-heading"
           className="max-w-2xl text-3xl font-bold leading-tight tracking-tight text-text-primary sm:text-4xl"
         >
-          Interested in working together?
+          Let's build something meaningful.
         </h2>
 
         <p className="mt-6 max-w-2xl leading-relaxed text-text-secondary">
-          I'm always open to hearing about interesting projects and front-end
-          development opportunities. If you'd like to connect, feel free to
-          reach out.
+          I'm interested in connecting with teams building thoughtful digital
+          experiences, accessible interfaces, and modern web applications.
+          I'm particularly interested in front-end engineering, UI development,
+          and design systems. If you're working on these kinds of experiences,
+          I'd love to hear from you.
         </p>
 
         <div className="mt-8 flex flex-wrap items-center gap-4">
@@ -34,7 +36,7 @@ function Contact() {
           <a
             href="https://www.linkedin.com/in/annawesolowski"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="rounded-md border border-border px-6 py-3 font-medium text-text-primary transition-colors hover:bg-surface hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
           >
             LinkedIn
@@ -43,7 +45,7 @@ function Contact() {
           <a
             href="https://github.com/constantmotion29"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="rounded-md border border-border px-6 py-3 font-medium text-text-primary transition-colors hover:bg-surface hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
           >
             GitHub

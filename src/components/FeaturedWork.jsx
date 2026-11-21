@@ -6,8 +6,13 @@ function FeaturedWork() {
     "JavaScript",
     "Vite",
     "Tailwind CSS",
+    "Node.js",
     "Express",
     "REST APIs",
+    "Storybook",
+    "Vitest",
+    "React Testing Library",
+    "Accessibility",
   ];
 
   return (
@@ -30,8 +35,8 @@ function FeaturedWork() {
           </h2>
 
           <p className="mt-4 max-w-2xl leading-relaxed text-text-secondary">
-            Here's a look at a project I've been working on, along with the
-            tools and ideas behind it.
+            A closer look at a project combining interface development,
+            application architecture, accessibility, and testing.
           </p>
         </div>
 
@@ -59,10 +64,12 @@ function FeaturedWork() {
               </h3>
 
               <p className="mt-4 leading-relaxed text-text-secondary">
-                The Video Crypt is a horror movie rental app inspired by the
-                video stores I used to visit growing up. You can browse the
-                movie catalog, search for titles, check availability, view
-                movie details, and reserve movies.
+                A horror movie rental application inspired by the video stores
+                I visited growing up. Built with React and Express, it features
+                a searchable movie catalog, API-powered movie details,
+                interactive reservations, and reusable interface components.
+                The project also explores accessible interaction patterns,
+                component documentation, and automated testing.
               </p>
 
               <div className="mt-6 flex flex-wrap gap-2">

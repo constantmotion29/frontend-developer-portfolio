@@ -2,36 +2,53 @@ function Skills() {
   const skillGroups = [
     {
       title: "Front-end Development",
-      description: "The languages and tools I use to build websites.",
+      description:
+        "Building responsive, interactive websites and application interfaces.",
       skills: [
         "HTML5",
         "CSS3 / Sass",
         "JavaScript (ES6+)",
         "React",
         "jQuery",
+        "Tailwind CSS",
         "Responsive Development",
       ],
     },
     {
       title: "UI Engineering & Accessibility",
       description:
-        "Working from designs and making sure interfaces work for everyone.",
+        "Translating designs into consistent, accessible user experiences.",
       skills: [
         "Reusable UI Components",
         "Design-to-Code Implementation",
         "Figma Dev Mode",
-        "WCAG Guidelines",
-        "Cross-Browser Testing",
-        "Component-Driven Development",
         "Storybook",
+        "WCAG Guidelines",
+        "Semantic HTML",
+        "Keyboard Accessibility",
+        "Focus Management",
+        "Cross-Browser Compatibility",
       ],
     },
     {
-      title: "Modern Application Development",
+      title: "Testing & Quality",
       description:
-        "Tools and technologies I've used to build interactive applications.",
+        "Validating component behavior, accessibility, and application reliability.",
       skills: [
-        "Tailwind CSS",
+        "Vitest",
+        "React Testing Library",
+        "Playwright",
+        "Storybook Testing",
+        "Component Testing",
+        "Accessibility Testing",
+        "Chrome DevTools",
+      ],
+    },
+    {
+      title: "Application Development & Integration",
+      description:
+        "Developing application features and connecting front-end experiences to backend services.",
+      skills: [
         "Vite",
         "Node.js",
         "Express",
@@ -42,31 +59,22 @@ function Skills() {
       ],
     },
     {
-      title: "Development Tools & Automation",
-      description: "Tools I use for development, testing, and automation.",
+      title: "Development Tools & Platforms",
+      description:
+        "Supporting collaborative development, content platforms, and automated workflows.",
       skills: [
         "Git / GitHub",
-        "VS Code",
-        "Chrome DevTools",
         "CI/CD Pipelines",
         "Docker",
-        "PowerShell",
-        "Bash",
-        "JavaScript Automation",
-        "Enfocus Switch",
-      ],
-    },
-    {
-      title: "CMS & Templating",
-      description:
-        "Content management systems and templating technologies I've worked with.",
-      skills: [
         "Cascade CMS",
         "Drupal",
         "WordPress",
         "Velocity",
         "XML / XSLT",
-        "Structured Content",
+        "PowerShell",
+        "Bash",
+        "JavaScript Automation",
+        "Enfocus Switch",
       ],
     },
   ];
@@ -90,8 +98,8 @@ function Skills() {
         </h2>
 
         <p className="mt-4 max-w-2xl leading-relaxed text-text-secondary">
-          Here's an overview of the technologies, tools, and platforms I've
-          worked with throughout my career and personal projects.
+          A combination of professional development experience and modern
+          application tools used in independent projects.
         </p>
 
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

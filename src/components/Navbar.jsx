@@ -21,15 +21,33 @@ function Navbar({ theme, onThemeToggle }) {
     };
   }, [menuOpen]);
 
-  // Handle section links when navigating between routes.
+  // Handle section links after route rendering.
   useEffect(() => {
+    const reducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+
+    const behavior = reducedMotion ? "auto" : "smooth";
+    let animationFrameId;
+
     if (location.hash) {
       const targetId = decodeURIComponent(location.hash.slice(1));
 
-      document.getElementById(targetId)?.scrollIntoView();
+      animationFrameId = window.requestAnimationFrame(() => {
+        document.getElementById(targetId)?.scrollIntoView({ behavior });
+      });
     } else {
-      window.scrollTo(0, 0);
+      window.scrollTo({
+        top: 0,
+        behavior,
+      });
     }
+
+    return () => {
+      if (animationFrameId) {
+        window.cancelAnimationFrame(animationFrameId);
+      }
+    };
   }, [location.pathname, location.hash]);
 
   function closeMenu() {
@@ -81,7 +99,7 @@ function Navbar({ theme, onThemeToggle }) {
 
             <Link
               to="/#contact"
-              className="hidden rounded-md border border-accent/50 px-4 py-2 text-sm font-medium text-accent transition-colors hover:bg-accent/10 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus sm:inline-flex"
+              className="hidden rounded-md border border-accent/50 px-4 py-2 text-sm font-medium text-accent transition-colors hover:bg-accent/10 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
             >
               Let's talk
             </Link>

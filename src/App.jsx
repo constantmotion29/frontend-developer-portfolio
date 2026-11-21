@@ -54,6 +54,7 @@ function App() {
             path="/projects/the-video-crypt"
             element={<TheVideoCryptCaseStudy />}
           />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
 

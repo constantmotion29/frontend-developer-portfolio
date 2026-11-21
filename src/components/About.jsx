@@ -2,7 +2,7 @@ function About() {
   const experienceMetrics = [
     {
       value: "8",
-      description: "Years working in web development",
+      description: "Years of professional web development experience",
     },
     {
       value: "18",
@@ -30,28 +30,32 @@ function About() {
             id="about-heading"
             className="max-w-xl text-3xl font-bold leading-tight tracking-tight text-text-primary sm:text-4xl"
           >
-            I enjoy bringing ideas to life through code.
+            Building thoughtful, accessible experiences through code.
           </h2>
 
           <div className="mt-8 max-w-2xl space-y-5 leading-relaxed text-text-secondary">
             <p>
-              I've spent the past eight years building and maintaining websites
-              and web applications in higher education and e-commerce. Along
-              the way, I've worked with everything from content management
-              systems to custom applications and e-commerce platforms.
+              I'm a web developer with eight years of professional experience
+              building and maintaining websites and applications across higher
+              education and e-commerce. I've worked across the development
+              process, from front-end implementation and backend integrations
+              to CMS development and workflow automation.
             </p>
 
             <p>
-              Much of my work involves turning designs into responsive,
-              accessible interfaces and building reusable components. I enjoy
-              the process of taking a design from concept to code and making
-              sure everything works as expected.
+              I enjoy turning design concepts into responsive, accessible
+              interfaces and building reusable components that make digital
+              experiences more consistent. I'm particularly interested in the
+              details that make interfaces intuitive, maintainable, and
+              inclusive.
             </p>
 
             <p>
-              More recently, I've been building independent projects with
-              React, exploring component development, API integration, and
-              modern front-end tools while continuing to grow my skills.
+              My independent projects have expanded my work into modern React
+              application development, including component architecture, API
+              integration, and automated testing. I'm continuing to build on
+              that experience with a focus on UI engineering, design systems,
+              and accessible front-end development.
             </p>
           </div>
         </div>

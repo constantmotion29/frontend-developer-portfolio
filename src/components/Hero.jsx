@@ -14,7 +14,7 @@ function Hero() {
       className="mx-auto flex min-h-[80vh] max-w-6xl flex-col justify-center px-6 py-24"
     >
       <p className="mb-6 text-sm font-medium uppercase tracking-[0.25em] text-accent">
-        Front-End Developer
+        Front-End Developer | UI Engineering
       </p>
 
       <h1
