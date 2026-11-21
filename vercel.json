@@ -1,4 +1,11 @@
 {
+  "redirects": [
+    {
+      "source": "/projects/the-video-crypt",
+      "destination": "/projects/the-video-crypt/",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",
