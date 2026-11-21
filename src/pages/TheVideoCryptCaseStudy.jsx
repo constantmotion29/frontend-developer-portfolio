@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const technologies = [
@@ -45,6 +46,16 @@ function CaseStudySection({ eyebrow, title, children, id }) {
 }
 
 function TheVideoCryptCaseStudy() {
+  useEffect(() => {
+    const previousTitle = document.title;
+
+    document.title = "The Video Crypt Case Study | Anna Wesolowski";
+
+    return () => {
+      document.title = previousTitle;
+    };
+  }, []);
+
   return (
     <article>
       {/* Project introduction */}
@@ -524,13 +535,21 @@ function TheVideoCryptCaseStudy() {
       </div>
 
       {/* Technologies */}
-      <section className="border-t border-border bg-surface px-6 py-16 sm:py-20">
+      <section
+        aria-labelledby="technologies-heading"
+        className="border-t border-border bg-surface px-6 py-16 sm:py-20"
+      >
         <div className="mx-auto max-w-6xl">
           <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-accent">
             Tools & technologies
           </p>
 
-          <h2 className="text-2xl font-bold text-text-primary">Built with</h2>
+          <h2
+            id="technologies-heading"
+            className="text-2xl font-bold text-text-primary"
+          >
+            Built with
+          </h2>
 
           <div className="mt-8 flex flex-wrap gap-3">
             {technologies.map((technology) => (
@@ -546,13 +565,16 @@ function TheVideoCryptCaseStudy() {
       </section>
 
       {/* Closing links */}
-      <section className="px-6 py-20">
+      <section aria-labelledby="project-links-heading" className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
           <p className="text-sm font-medium uppercase tracking-[0.2em] text-accent">
             Take a closer look
           </p>
 
-          <h2 className="mt-3 text-3xl font-bold text-text-primary sm:text-4xl">
+          <h2
+            id="project-links-heading"
+            className="mt-3 text-3xl font-bold text-text-primary sm:text-4xl"
+          >
             See The Video Crypt in action.
           </h2>
 
