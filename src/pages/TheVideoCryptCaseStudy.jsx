@@ -48,11 +48,22 @@ function CaseStudySection({ eyebrow, title, children, id }) {
 function TheVideoCryptCaseStudy() {
   useEffect(() => {
     const previousTitle = document.title;
+    const descriptionTag = document.querySelector('meta[name="description"]');
+    const previousDescription = descriptionTag?.content;
 
     document.title = "The Video Crypt Case Study | Anna Wesolowski";
 
+    if (descriptionTag) {
+      descriptionTag.content =
+        "Explore The Video Crypt, a horror movie rental application built with React, Vite, Express, and accessible UI patterns. See the design, architecture, integrations, and testing behind the project.";
+    }
+
     return () => {
       document.title = previousTitle;
+
+      if (descriptionTag && previousDescription !== undefined) {
+        descriptionTag.content = previousDescription;
+      }
     };
   }, []);
 
