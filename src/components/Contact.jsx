@@ -19,16 +19,16 @@ function Contact() {
 
         <p className="mt-6 max-w-2xl leading-relaxed text-text-secondary">
           I'm interested in connecting with teams building thoughtful digital
-          experiences, accessible interfaces, and modern web applications.
-          I'm particularly interested in front-end engineering, UI development,
-          and design systems. If you're working on these kinds of experiences,
-          I'd love to hear from you.
+          experiences, accessible interfaces, and modern web applications. I'm
+          particularly interested in front-end engineering, UI development, and
+          design systems. If you're working on these kinds of experiences, I'd
+          love to hear from you.
         </p>
 
         <div className="mt-8 flex flex-wrap items-center gap-4">
           <a
             href="mailto:anw1667@outlook.com"
-            className="rounded-md bg-accent px-6 py-3 text-center font-medium text-white transition-colors hover:bg-accent/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
+            className="rounded-md bg-accent-button px-6 py-3 text-center font-medium text-white transition-colors hover:bg-accent/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
           >
             Email Me
           </a>
