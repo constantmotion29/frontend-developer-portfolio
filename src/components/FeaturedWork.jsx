@@ -35,8 +35,8 @@ function FeaturedWork() {
           </h2>
 
           <p className="mt-4 max-w-2xl leading-relaxed text-text-secondary">
-            A closer look at a project combining interface development,
-            application architecture, accessibility, and testing.
+            A selection of personal work exploring front-end development, UI
+            implementation, and accessible web experiences.
           </p>
         </div>
 
@@ -56,7 +56,7 @@ function FeaturedWork() {
             {/* Project Details */}
             <div className="flex flex-col justify-center p-6 sm:p-10">
               <p className="text-sm font-medium text-accent">
-                Personal Project
+                Personal Learning Project
               </p>
 
               <h3 className="mt-3 text-2xl font-bold text-text-primary">
@@ -64,12 +64,13 @@ function FeaturedWork() {
               </h3>
 
               <p className="mt-4 leading-relaxed text-text-secondary">
-                A horror movie rental application inspired by the video stores I
-                visited growing up. Built with React and Express, it features a
-                searchable movie catalog, API-powered movie details, interactive
-                reservations, and reusable interface components. The project
-                also explores accessible interaction patterns, component
-                documentation, and automated testing.
+                A personal learning project inspired by the video stores I
+                visited growing up. I built this fictional horror movie rental
+                storefront as a hands-on opportunity to explore React and learn
+                more about building interactive web applications. Along the way,
+                I practiced component-based development, API integration,
+                application state, accessible interactions, and automated
+                testing.
               </p>
 
               <div className="mt-6 flex flex-wrap gap-2">
