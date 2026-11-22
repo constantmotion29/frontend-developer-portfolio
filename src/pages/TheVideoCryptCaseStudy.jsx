@@ -76,12 +76,26 @@ function TheVideoCryptCaseStudy() {
             to="/"
             className="text-sm font-medium text-text-secondary underline underline-offset-4 transition-colors hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
           >
-            ← Back to portfolio
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 16 16"
+              width="14"
+              height="14"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="inline-block"
+            >
+              <path d="M13 8H3m5 5-5-5 5-5" />
+            </svg>{" "}
+            Back to portfolio
           </Link>
 
           <div className="mt-12 max-w-4xl">
             <p className="mb-4 text-sm font-medium uppercase tracking-[0.25em] text-accent">
-              Featured Project · React Application
+              Personal Learning Project | React
             </p>
 
             <h1 className="text-4xl font-bold tracking-tight text-text-primary sm:text-5xl lg:text-6xl">
@@ -89,16 +103,17 @@ function TheVideoCryptCaseStudy() {
             </h1>
 
             <p className="mt-6 max-w-3xl text-xl leading-relaxed text-text-secondary sm:text-2xl">
-              A little piece of the video store experience, brought to the web.
+              Bringing the nostalgia of neighborhood video stores to the web.
             </p>
 
             <p className="mt-6 max-w-2xl leading-relaxed text-text-secondary">
               Inspired by the neighborhood video stores I used to visit almost
-              every Friday, The Video Crypt is a fictional horror rental shop
-              built with React. I wanted to create something of my own while
-              exploring modern front-end development, bringing together a
-              retro-inspired storefront, a searchable movie catalog, live movie
-              data, and an interactive reservation experience.
+              every Friday, The Video Crypt is a fictional horror rental shop I
+              created as a hands-on learning project. I wanted to explore React
+              by building something of my own rather than following a predefined
+              tutorial. What started as an experiment grew into a storefront
+              with a searchable movie catalog, external movie data, and an
+              interactive reservation experience.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-5 text-sm font-medium">
@@ -265,7 +280,7 @@ function TheVideoCryptCaseStudy() {
               Project type
             </p>
             <p className="mt-2 font-medium text-text-primary">
-              Personal project
+              Personal learning project
             </p>
           </div>
 
@@ -274,7 +289,7 @@ function TheVideoCryptCaseStudy() {
               Focus
             </p>
             <p className="mt-2 font-medium text-text-primary">
-              Front-end development · UI engineering
+              React exploration | Hands-on development
             </p>
           </div>
 
@@ -476,24 +491,25 @@ function TheVideoCryptCaseStudy() {
           >
             <p>
               Testing was another area I wanted to explore as part of this
-              project. I started adding tests as the application grew, covering
-              individual components as well as the behavior behind them.
+              project. As the application grew, I started writing tests to check
+              individual components, custom hooks, and the behavior behind
+              different features.
             </p>
 
             <p>
-              I used Vitest and React Testing Library for front-end component
-              and hook tests, and added tests for the Express routes and TMDB
-              integration. I also set up Storybook to develop and test
-              components independently, including browser-based component
-              testing.
+              I used Vitest and React Testing Library to test front-end
+              components and hooks. I also added tests for the Express routes
+              and TMDB integration. Along the way, I set up Storybook to develop
+              and test components independently, including browser-based
+              component testing.
             </p>
 
             <p>
               Across the application, backend, and Storybook projects, I now
-              have 94 automated tests passing. Building out this coverage helped
-              me get into the habit of checking that things work as expected,
-              rather than relying only on what I could see while clicking around
-              in the browser.
+              have 94 automated tests passing. Working through this process
+              helped me become more familiar with writing tests, checking
+              application behavior, and catching issues beyond what I could see
+              by manually clicking through the application.
             </p>
           </CaseStudySection>
 
